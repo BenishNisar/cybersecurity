@@ -1,0 +1,1 @@
+const fs=require('node:fs');const source=fs.readFileSync('assets/js/main.js','utf8');fs.writeFileSync('assets/js/main.min.js',source.split('\n').map(line=>line.trim()).filter(line=>line&&!line.startsWith('//')).join('\n')+'\n');console.log('Production JavaScript written.');

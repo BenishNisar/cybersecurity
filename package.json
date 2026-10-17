@@ -1,0 +1,15 @@
+{
+  "name": "oryvantai-homepage",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/main.min.css --minify",
+    "build:js": "node ./scripts/build-js.cjs",
+    "build": "npm run build:css && npm run build:js",
+    "dev": "tailwindcss -i ./assets/css/input.css -o ./assets/css/main.min.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "4.1.18",
+    "@tailwindcss/cli": "4.1.18"
+  }
+}
