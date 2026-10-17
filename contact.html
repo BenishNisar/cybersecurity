@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html
+    lang="en"
+    class="no-js"
+>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <meta
+            name="referrer"
+            content="strict-origin-when-cross-origin"
+        />
+        <meta
+            name="theme-color"
+            content="#07152F"
+        />
+        <title>Contact OryvantAI | Start a Security Conversation</title>
+        <meta
+            name="description"
+            content="Start a conversation with OryvantAI about your security workflow. Contact bilal@oryvantai.tech for cybersecurity solution discussions and general enquiries."
+        />
+        <link
+            rel="canonical"
+            href="https://oryvantai.tech/contact.html"
+        />
+        <meta
+            property="og:type"
+            content="website"
+        />
+        <meta
+            property="og:title"
+            content="Contact OryvantAI | Start a Security Conversation"
+        />
+        <meta
+            property="og:description"
+            content="Your tools. Your experience. A clearer path from evidence to action."
+        />
+        <meta
+            property="og:url"
+            content="https://oryvantai.tech/contact.html"
+        />
+        <meta
+            property="og:image"
+            content="https://oryvantai.tech/assets/images/social-cover.webp"
+        />
+        <meta
+            property="og:image:alt"
+            content="OryvantAI brand artwork with cyan network connections"
+        />
+        <meta
+            name="twitter:card"
+            content="summary_large_image"
+        />
+        <meta
+            name="twitter:title"
+            content="Contact OryvantAI | Start a Security Conversation"
+        />
+        <meta
+            name="twitter:description"
+            content="A clearer path from evidence to action."
+        />
+        <meta
+            name="twitter:image"
+            content="https://oryvantai.tech/assets/images/social-cover.webp"
+        />
+        <link
+            rel="icon"
+            href="assets/images/favicon.png"
+        />
+        <link
+            rel="preload"
+            as="image"
+            href="assets/images/hero-network.webp"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/css/main.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="contact.css"
+        />
+        <script
+            defer
+            src="assets/js/main.min.js"
+        ></script>
+<style>
+    /* Contact page additions. Global navigation, footer, buttons and consent are reused. */
+.contact-page .primary-nav .nav-home {
+    color: var(--brand-text);
+}
+.contact-page .primary-nav a[aria-current="page"] {
+    color: #1130a2;
+}
+.contact-hero {
+    padding: 150px 0 66px;
+    background:
+        linear-gradient(100deg, #07152f 35%, #07152fe8),
+        url("assets/images/hero-network.webp") right center / 50% auto no-repeat;
+}
+.contact-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #54e0fc;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.contact-breadcrumb a {
+    color: #c7d8e9;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+}
+.contact-hero h1 {
+    font-size: clamp(56px, 4.4vw, 68px);
+    line-height: 1.12;
+    letter-spacing: -0.05em;
+    margin-bottom: 26px;
+}
+.contact-lead {
+    color: #b4cce0;
+    font-size: 18px;
+    line-height: 1.85;
+    max-width: 720px;
+    margin: 0;
+}
+.contact-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+.contact-option {
+    padding: 36px;
+    border: 1px solid var(--brand-border);
+    border-radius: var(--radius-card);
+    background: white;
+}
+.contact-option > i {
+    display: block;
+    font-size: 32px;
+    margin-bottom: 27px;
+}
+.contact-option h3 {
+    font-size: 28px;
+    line-height: 1.4;
+    margin-bottom: 23px;
+}
+.contact-option > p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.contact-option dl {
+    margin: 0;
+}
+.contact-option dl > div + div {
+    margin-top: 20px;
+    border-top: 1px solid var(--brand-border);
+    padding-top: 20px;
+}
+.contact-option dt {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--brand-muted);
+    margin-bottom: 8px;
+}
+.contact-option dd {
+    margin: 0;
+}
+.contact-option dd a {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    min-height: 44px;
+    font-size: 18px;
+    color: #1130a2;
+    overflow-wrap: anywhere;
+}
+.contact-option dd i {
+    font-size: 14px;
+    flex: none;
+}
+.contact-topics {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.contact-topics li {
+    border: 1px solid #0d89f126;
+    background: #0d89f108;
+    border-radius: 7px;
+    padding: 9px 13px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #1130a2;
+}
+.contact-form-layout {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 48px;
+    align-items: start;
+}
+.contact-form-panel {
+    padding: 38px;
+    border: 1px solid var(--brand-border);
+    border-radius: var(--radius-card);
+    background: white;
+    min-width: 0;
+}
+.contact-form-panel .section-heading {
+    margin-bottom: 28px;
+}
+.contact-form-panel h2 {
+    font-size: 42px;
+}
+.contact-form-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 20px;
+    border: 1px solid #0d89f126;
+    border-radius: 10px;
+    background: #0d89f108;
+    margin-bottom: 26px;
+}
+.contact-form-notice > i {
+    padding-top: 5px;
+    flex: none;
+    font-size: 21px;
+}
+.contact-form-notice p {
+    font-size: 14px;
+    line-height: 1.85;
+    margin: 0;
+}
+.contact-form-notice a {
+    color: #1130a2;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    overflow-wrap: anywhere;
+}
+.contact-required {
+    font-size: 13px;
+    color: var(--brand-muted);
+    margin-bottom: 24px;
+}
+.contact-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 22px;
+}
+.contact-field {
+    min-width: 0;
+}
+.contact-field-wide {
+    grid-column: 1 / -1;
+}
+.contact-field label {
+    display: block;
+    color: var(--brand-text);
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.contact-field input,
+.contact-field select,
+.contact-field textarea {
+    width: 100%;
+    min-width: 0;
+    min-height: 52px;
+    border: 1px solid #c9d9e6;
+    border-radius: 8px;
+    padding: 13px 14px;
+    background: #fbfdff;
+    color: var(--brand-text);
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.contact-field textarea {
+    resize: vertical;
+    min-height: 175px;
+}
+.contact-field input:focus-visible,
+.contact-field select:focus-visible,
+.contact-field textarea:focus-visible,
+.contact-consent input:focus-visible {
+    outline: 2px solid #0d89f1;
+    outline-offset: 3px;
+    border-color: #0d89f1;
+}
+.contact-field input:user-invalid,
+.contact-field select:user-invalid,
+.contact-field textarea:user-invalid {
+    outline: 2px solid #1130a2;
+    outline-offset: 2px;
+}
+.contact-field-hint {
+    font-size: 13px;
+    line-height: 1.85;
+    margin: 10px 0 0;
+    color: var(--brand-muted);
+}
+.contact-consent {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 24px 0;
+}
+.contact-consent input {
+    width: 20px;
+    height: 20px;
+    accent-color: #1130a2;
+    flex: none;
+}
+.contact-consent label {
+    font-size: 14px;
+    line-height: 1.8;
+    cursor: pointer;
+    padding: 10px 0;
+}
+.contact-privacy-link {
+    color: #1130a2;
+    background: none;
+    border: 0;
+    padding: 10px 0;
+    min-height: 44px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.contact-guidance {
+    padding: 34px;
+    border: 1px solid var(--brand-border);
+    border-radius: var(--radius-card);
+    background: #f8fbff;
+}
+.contact-guidance-icon {
+    display: block;
+    font-size: 34px;
+    margin-bottom: 28px;
+}
+.contact-guidance h3 {
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 22px;
+}
+.contact-guidance > p:not(.eyebrow) {
+    font-size: 16px;
+    line-height: 1.85;
+}
+.contact-guidance ol {
+    padding-left: 22px;
+    margin: 24px 0 0;
+}
+.contact-guidance li {
+    padding-left: 7px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 1.85;
+}
+.contact-guidance li:last-child {
+    margin-bottom: 0;
+}
+.contact-guidance li::marker {
+    color: #1130a2;
+    font-family: var(--font-mono);
+}
+.contact-security {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    background: #0d89f108;
+    border: 1px solid #0d89f126;
+    border-left: 3px solid #0d89f1;
+    border-radius: var(--radius-card);
+}
+.contact-security > i {
+    font-size: 36px;
+    padding-top: 7px;
+    flex: none;
+}
+.contact-security h2 {
+    font-size: 44px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+.contact-security p:last-child {
+    font-size: 17px;
+    line-height: 1.85;
+    max-width: 800px;
+    margin: 0;
+}
+.contact-final-cta {
+    padding: 0 0 80px;
+}
+.contact-final-cta .contact-panel {
+    padding: 52px;
+}
+.contact-final-cta .contact-panel > div:first-child {
+    min-width: 0;
+}
+.contact-final-cta .button-row {
+    margin-top: 28px;
+}
+@media (max-width: 1279px) {
+    .contact-form-layout {
+        grid-template-columns: 1.3fr 0.8fr;
+        gap: 30px;
+    }
+    .contact-form-panel,
+    .contact-guidance {
+        padding: 30px;
+    }
+    .contact-form-panel h2 {
+        font-size: 38px;
+    }
+}
+@media (max-width: 1023px) {
+    .contact-form-layout {
+        grid-template-columns: 1fr;
+    }
+    .contact-guidance ol {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 35px;
+    }
+    .contact-option {
+        padding: 29px;
+    }
+    .contact-option h3 {
+        font-size: 25px;
+    }
+    .contact-final-cta .contact-panel {
+        padding: 42px;
+    }
+}
+@media (max-width: 767px) {
+    .contact-hero {
+        padding: 120px 0 50px;
+        background-size: 100% auto;
+    }
+    .contact-breadcrumb {
+        margin-bottom: 24px;
+    }
+    .contact-hero h1 {
+        font-size: 41px;
+        line-height: 1.15;
+    }
+    .contact-lead {
+        font-size: 17px;
+    }
+    .contact-options,
+    .contact-fields {
+        grid-template-columns: 1fr;
+    }
+    .contact-option {
+        padding: 28px;
+    }
+    .contact-option h3 {
+        font-size: 26px;
+    }
+    .contact-option dd a {
+        font-size: 16px;
+        gap: 16px;
+    }
+    .contact-form-panel,
+    .contact-guidance {
+        padding: 27px;
+    }
+    .contact-form-panel h2 {
+        font-size: 34px;
+    }
+    .contact-form-notice {
+        padding: 18px;
+        gap: 12px;
+    }
+    .contact-consent {
+        column-gap: 9px;
+    }
+    .contact-consent label {
+        max-width: calc(100% - 40px);
+    }
+    .contact-privacy-link {
+        margin-left: 30px;
+    }
+    .contact-guidance h3 {
+        font-size: 28px;
+    }
+    .contact-guidance ol {
+        display: block;
+    }
+    .contact-security {
+        padding: 27px;
+        gap: 20px;
+    }
+    .contact-security > i {
+        font-size: 28px;
+    }
+    .contact-security h2 {
+        font-size: 32px;
+    }
+    .contact-security p:last-child {
+        font-size: 16px;
+    }
+    .contact-final-cta {
+        padding-bottom: 64px;
+    }
+    .contact-final-cta .contact-panel {
+        padding: 35px 26px;
+    }
+    .contact-final-cta .contact-panel h2 {
+        font-size: 36px;
+    }
+}
+@media (max-width: 389px) {
+    .contact-hero h1 {
+        font-size: 38px;
+    }
+    .contact-form-panel,
+    .contact-guidance,
+    .contact-option {
+        padding: 24px;
+    }
+    .contact-form-notice {
+        display: block;
+    }
+    .contact-form-notice > i {
+        margin-bottom: 12px;
+    }
+    .contact-security {
+        display: block;
+        padding: 26px;
+    }
+    .contact-security > i {
+        display: block;
+        margin-bottom: 24px;
+    }
+}
+
+</style>
+
+
+    </head>
+    <body class="contact-page">
+        <a
+            class="skip-link"
+            href="#main"
+            >Skip to content</a
+        >
+        <div class="topbar">
+            <div class="page-container flex items-center justify-between">
+                <p>
+                    <i
+                        class="fa-solid fa-shield-halved"
+                        aria-hidden="true"
+                    ></i>
+                    INTELLIGENCE FOR ACCOUNTABLE SECURITY OPERATIONS
+                </p>
+                <a href="mailto:bilal@oryvantai.tech"
+                    >bilal@oryvantai.tech
+                    <i
+                        class="fa-solid fa-arrow-up-right-from-square"
+                        aria-hidden="true"
+                    ></i
+                ></a>
+            </div>
+        </div>
+        <!-- Header -->
+        <header class="site-header">
+            <div class="header-inner">
+                <a
+                    class="brand"
+                    href="index.html"
+                    aria-label="OryvantAI home"
+                    ><img
+                        src="assets/images/logo-240.webp"
+                        width="42"
+                        height="42"
+                        alt=""
+                    /><span>Oryvant<span class="brand-ai">AI</span></span></a
+                ><button
+                    class="mobile-toggle"
+                    aria-controls="primary-nav"
+                    aria-expanded="false"
+                >
+                    <span
+                        class="menu-lines"
+                        aria-hidden="true"
+                    ></span
+                    ><span class="sr-only">Open navigation</span>
+                </button>
+                <nav
+                    class="primary-nav"
+                    id="primary-nav"
+                    aria-label="Main navigation"
+                >
+                    <div class="mobile-nav-heading">
+                        <span>Explore OryvantAI</span><span>SECURITY + INTELLIGENCE</span>
+                    </div>
+                    <a
+                        href="index.html"
+                        class="nav-home"
+                        >Home</a
+                    >
+                    <div class="nav-group">
+                        <button
+                            class="nav-dropdown-toggle"
+                            aria-expanded="false"
+                            aria-controls="menu-solutions"
+                        >
+                            Solutions<i
+                                class="fa-solid fa-chevron-down"
+                                aria-hidden="true"
+                            ></i>
+                        </button>
+                        <div
+                            class="nav-dropdown menu-solutions"
+                            id="menu-solutions"
+                            hidden
+                        >
+                            <div class="menu-heading">
+                                <span>SOLUTIONS</span><span>BUILT AROUND YOUR OPERATIONS</span>
+                            </div>
+                            <div class="menu-grid">
+                                <a href="solutions.html#intelligence"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-fingerprint"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Security Intelligence Workbench</strong
+                                        ><small>Evidence and investigation</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="solutions.html#response"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-shield-halved"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Procedure &amp; Response Studio</strong
+                                        ><small>Procedures and reviewed response</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="solutions.html#learning"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-chart-line"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Learning &amp; Reporting Workspace</strong
+                                        ><small>Learning and decision support</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                            <div class="menu-bottom">
+                                Controlled AI. Clear accountability.<a href="#contact"
+                                    >Talk to an Expert
+                                    <i
+                                        class="fa-solid fa-arrow-right"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-group">
+                        <button
+                            class="nav-dropdown-toggle"
+                            aria-expanded="false"
+                            aria-controls="menu-services"
+                        >
+                            Services<i
+                                class="fa-solid fa-chevron-down"
+                                aria-hidden="true"
+                            ></i>
+                        </button>
+                        <div
+                            class="nav-dropdown menu-services"
+                            id="menu-services"
+                            hidden
+                        >
+                            <div class="menu-heading">
+                                <span>SERVICES</span><span>BUILT AROUND YOUR OPERATIONS</span>
+                            </div>
+                            <div class="menu-grid">
+                                <a href="services.html#ai-cybersecurity"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-brain"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>AI Powered Cybersecurity</strong
+                                        ><small>Controlled intelligence</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="services.html#soc-automation"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-diagram-project"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>SOC Automation</strong
+                                        ><small>Analyst workflow assistance</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="services.html#siem-automation"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-database"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>SIEM Automation</strong
+                                        ><small>Logs and validated queries</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="services.html#threat-detection"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-crosshairs"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Threat Detection</strong
+                                        ><small>Context and detection quality</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="services.html#security-analytics"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-chart-line"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Security Analytics</strong
+                                        ><small>Trusted records into reporting</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                            <div class="menu-bottom">
+                                Controlled AI. Clear accountability.<a href="#contact"
+                                    >Talk to an Expert
+                                    <i
+                                        class="fa-solid fa-arrow-right"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-group">
+                        <button
+                            class="nav-dropdown-toggle"
+                            aria-expanded="false"
+                            aria-controls="menu-industries"
+                        >
+                            Industries<i
+                                class="fa-solid fa-chevron-down"
+                                aria-hidden="true"
+                            ></i>
+                        </button>
+                        <div
+                            class="nav-dropdown menu-industries"
+                            id="menu-industries"
+                            hidden
+                        >
+                            <div class="menu-heading">
+                                <span>INDUSTRIES</span><span>BUILT AROUND YOUR OPERATIONS</span>
+                            </div>
+                            <div class="menu-grid">
+                                <a href="index.html#industry-0"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-building-columns"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Financial Services</strong
+                                        ><small>Investigation and evidence</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="index.html#industry-1"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-heart-pulse"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Healthcare</strong
+                                        ><small>Sensitive access and incidents</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="index.html#industry-2"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-tower-broadcast"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Telecom</strong
+                                        ><small>Visibility and handovers</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="index.html#industry-3"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-industry"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Operational Technology</strong
+                                        ><small>Operational safety and control</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="index.html#industry-4"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-building-shield"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Regulated Enterprises</strong
+                                        ><small>Defined requirements and scope</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="index.html#industry-5"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-network-wired"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Managed Security Providers</strong
+                                        ><small>Existing team enablement</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                            <div class="menu-bottom">
+                                Controlled AI. Clear accountability.<a href="#contact"
+                                    >Talk to an Expert
+                                    <i
+                                        class="fa-solid fa-arrow-right"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="index.html#about">Company</a><a href="index.html#insights">Insights</a
+                    ><a href="#contact" aria-current="page">Contact</a
+                    ><a
+                        class="button button-primary mobile-cta"
+                        href="#contact"
+                        >Talk to an Expert
+                        <i
+                            class="fa-solid fa-arrow-up-right-from-square"
+                            aria-hidden="true"
+                        ></i
+                    ></a>
+                    <p class="mobile-nav-note">
+                        Your tools. Your experience.<br />A clearer path from evidence to action.
+                    </p>
+                </nav>
+                <a
+                    class="button button-primary desktop-cta"
+                    href="#contact"
+                    >Talk to an Expert
+                    <i
+                        class="fa-solid fa-arrow-up-right-from-square"
+                        aria-hidden="true"
+                    ></i
+                ></a>
+            </div>
+        </header>
+        <div
+            class="nav-backdrop"
+            hidden
+        ></div>
+
+        <!-- Services Hero -->
+        <!-- Contact Hero -->
+        <main id="main">
+            <section
+                class="contact-hero dark-section"
+                id="home"
+                aria-labelledby="contact-title"
+            >
+                <div class="page-container">
+                    <nav
+                        class="contact-breadcrumb"
+                        aria-label="Breadcrumb"
+                    >
+                        <a href="index.html">Home</a><span aria-hidden="true">/</span
+                        ><span aria-current="page">Contact</span>
+                    </nav>
+                    <p class="eyebrow"><span aria-hidden="true"></span>CONTACT ORYVANTAI</p>
+                    <h1 id="contact-title">
+                        Start with the security<br /><span class="logo-gradient-text"
+                            >workflow that matters.</span
+                        >
+                    </h1>
+                    <p class="contact-lead">
+                        Tell us where your team is losing time, context or confidence. We can begin
+                        with one focused operational problem.
+                    </p>
+                </div>
+            </section>
+            <!-- Contact Options -->
+            <section
+                class="section"
+                id="contact"
+                aria-labelledby="options-title"
+            >
+                <div class="page-container">
+                    <div class="section-heading">
+                        <p class="eyebrow">
+                            <span aria-hidden="true"></span>LET’S START A CONVERSATION
+                        </p>
+                        <h2 id="options-title">A direct line to OryvantAI.</h2>
+                    </div>
+                    <div class="contact-options">
+                        <article class="contact-option">
+                            <i
+                                class="fa-solid fa-file-lines"
+                                aria-hidden="true"
+                            ></i>
+                            <h3>General Enquiries</h3>
+                            <dl>
+                                <div>
+                                    <dt>Email</dt>
+                                    <dd>
+                                        <a href="mailto:bilal@oryvantai.tech"
+                                            >bilal@oryvantai.tech<i
+                                                class="fa-solid fa-arrow-up-right-from-square"
+                                                aria-hidden="true"
+                                            ></i
+                                        ></a>
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt>Website</dt>
+                                    <dd>
+                                        <a href="https://oryvantai.tech/"
+                                            >oryvantai.tech<i
+                                                class="fa-solid fa-arrow-up-right-from-square"
+                                                aria-hidden="true"
+                                            ></i
+                                        ></a>
+                                    </dd>
+                                </div>
+                            </dl>
+                        </article>
+                        <article class="contact-option">
+                            <i
+                                class="fa-solid fa-shield-halved"
+                                aria-hidden="true"
+                            ></i>
+                            <h3>Security Solution Discussion</h3>
+                            <p>For organisations exploring:</p>
+                            <ul class="contact-topics">
+                                <li>SOC Automation</li>
+                                <li>SIEM Automation</li>
+                                <li>Threat Detection</li>
+                                <li>Security Analytics</li>
+                                <li>AI Powered Cybersecurity</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Form and Helpful Guidance -->
+            <section
+                class="section light-section"
+                id="enquiry"
+                aria-labelledby="enquiry-title"
+            >
+                <div class="page-container contact-form-layout">
+                    <div class="contact-form-panel">
+                        <div class="section-heading">
+                            <p class="eyebrow">
+                                <span aria-hidden="true"></span>YOUR STARTING POINT
+                            </p>
+                            <h2 id="enquiry-title">Tell us what matters.</h2>
+                        </div>
+                        <div
+                            class="contact-form-notice"
+                            id="form-availability"
+                        >
+                            <i
+                                class="fa-solid fa-file-circle-question"
+                                aria-hidden="true"
+                            ></i>
+                            <p>
+                                Online submission is not connected yet. This form checks your
+                                entries only; it does not send or store them. To contact us now,
+                                email
+                                <a href="mailto:bilal@oryvantai.tech">bilal@oryvantai.tech</a>.
+                            </p>
+                        </div>
+                        <!-- Integration: method="dialog" deliberately prevents network submission outside a dialog.
+     Native browser validation remains active. Before enabling delivery, change to method="post",
+     add a real HTTPS backend action, server validation, abuse protection and truthful response handling.
+     Do not replace this with a success message until delivery is confirmed by the backend. -->
+                        <form
+                            id="enquiry-form"
+                            method="dialog"
+                            aria-describedby="form-availability form-required"
+                        >
+                            <p
+                                class="contact-required"
+                                id="form-required"
+                            >
+                                All fields are required.
+                            </p>
+                            <div class="contact-fields">
+                                <div class="contact-field">
+                                    <label for="full-name">Full Name</label
+                                    ><input
+                                        id="full-name"
+                                        name="full_name"
+                                        autocomplete="name"
+                                        required
+                                        minlength="2"
+                                        maxlength="120"
+                                    />
+                                </div>
+                                <div class="contact-field">
+                                    <label for="work-email">Work Email</label
+                                    ><input
+                                        id="work-email"
+                                        name="email"
+                                        type="email"
+                                        autocomplete="email"
+                                        required
+                                        maxlength="254"
+                                    />
+                                </div>
+                                <div class="contact-field">
+                                    <label for="company">Company</label
+                                    ><input
+                                        id="company"
+                                        name="company"
+                                        autocomplete="organization"
+                                        required
+                                        maxlength="160"
+                                    />
+                                </div>
+                                <div class="contact-field">
+                                    <label for="role">Role</label
+                                    ><input
+                                        id="role"
+                                        name="role"
+                                        autocomplete="organization-title"
+                                        required
+                                        maxlength="120"
+                                    />
+                                </div>
+                                <div class="contact-field contact-field-wide">
+                                    <label for="interest">Area of Interest</label
+                                    ><select
+                                        id="interest"
+                                        name="interest"
+                                        required
+                                    >
+                                        <option
+                                            value=""
+                                            selected
+                                            disabled
+                                        >
+                                            Select an area of interest
+                                        </option>
+                                        <option>AI Powered Cybersecurity</option>
+                                        <option>SOC Automation</option>
+                                        <option>SIEM Automation</option>
+                                        <option>Threat Detection</option>
+                                        <option>Security Analytics</option>
+                                        <option>Security Workflow Review</option>
+                                        <option>General Enquiry</option>
+                                    </select>
+                                </div>
+                                <div class="contact-field contact-field-wide">
+                                    <label for="message">Message</label
+                                    ><textarea
+                                        id="message"
+                                        name="message"
+                                        rows="6"
+                                        required
+                                        minlength="10"
+                                        maxlength="4000"
+                                        aria-describedby="message-hint"
+                                    ></textarea>
+                                    <p
+                                        class="contact-field-hint"
+                                        id="message-hint"
+                                    >
+                                        Describe the operational problem. Keep credentials and
+                                        sensitive evidence out of this message.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact-consent">
+                                <input
+                                    type="checkbox"
+                                    id="privacy-agreement"
+                                    name="privacy_agreement"
+                                    required
+                                /><label for="privacy-agreement"
+                                    >I agree to the privacy notice</label
+                                ><button
+                                    type="button"
+                                    class="contact-privacy-link"
+                                    data-dialog="privacy-dialog"
+                                >
+                                    Read privacy notice
+                                </button>
+                            </div>
+                            <button
+                                class="button button-primary"
+                                type="submit"
+                            >
+                                Send Enquiry<i
+                                    class="fa-solid fa-arrow-up-right-from-square"
+                                    aria-hidden="true"
+                                ></i>
+                            </button>
+                        </form>
+                    </div>
+                    <aside
+                        class="contact-guidance"
+                        aria-labelledby="guidance-title"
+                    >
+                        <span class="contact-guidance-icon"
+                            ><i
+                                class="fa-solid fa-route"
+                                aria-hidden="true"
+                            ></i
+                        ></span>
+                        <p class="eyebrow">WHAT TO INCLUDE</p>
+                        <h3 id="guidance-title">
+                            A little context.<br />A clearer starting point.
+                        </h3>
+                        <p>To help us understand your requirement, tell us:</p>
+                        <ol>
+                            <li>What workflow is causing friction</li>
+                            <li>Which systems are involved</li>
+                            <li>Who owns the decision</li>
+                            <li>What evidence is available</li>
+                            <li>What outcome you want to improve</li>
+                        </ol>
+                    </aside>
+                </div>
+            </section>
+            <!-- Security and Privacy Note -->
+            <section
+                class="section"
+                aria-labelledby="security-title"
+            >
+                <div class="page-container">
+                    <div class="contact-security">
+                        <i
+                            class="fa-solid fa-lock"
+                            aria-hidden="true"
+                        ></i>
+                        <div>
+                            <p class="eyebrow">SECURITY AND PRIVACY</p>
+                            <h2 id="security-title">
+                                Keep sensitive data out<br />of the first message.
+                            </h2>
+                            <p>
+                                Do not submit passwords, credentials, production secrets or
+                                sensitive customer data through the public contact form.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Final CTA -->
+            <section
+                class="contact-final-cta"
+                aria-labelledby="final-title"
+            >
+                <div class="page-container">
+                    <div class="contact-panel">
+                        <div>
+                            <p class="eyebrow">
+                                <span aria-hidden="true"></span>START WITH ONE WORKFLOW
+                            </p>
+                            <h2 id="final-title">
+                                One workflow is enough<br />to start the conversation.
+                            </h2>
+                            <div class="button-row">
+                                <a
+                                    class="button button-primary"
+                                    href="#enquiry"
+                                    >Send Enquiry<i
+                                        class="fa-solid fa-arrow-up-right-from-square"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a
+                                    class="button button-secondary"
+                                    href="services.html"
+                                    >Explore Services<i
+                                        class="fa-solid fa-arrow-up-right-from-square"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-shield">
+                                <i
+                                    class="fa-solid fa-shield-halved"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+                            <p>A direct conversation</p>
+                            <a href="mailto:bilal@oryvantai.tech">bilal@oryvantai.tech</a
+                            ><span>oryvantai.tech</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="page-container">
+                <div class="footer-intro">
+                    <a
+                        class="brand"
+                        href="index.html"
+                        aria-label="OryvantAI home"
+                        ><img
+                            src="assets/images/logo-240.webp"
+                            width="42"
+                            height="42"
+                            alt=""
+                        /><span>Oryvant<span class="brand-ai">AI</span></span></a
+                    >
+                    <p>Custom AI powered cybersecurity.<br />Built around your operations.</p>
+                    <a href="#contact"
+                        >Start a conversation
+                        <i
+                            class="fa-solid fa-arrow-up-right-from-square"
+                            aria-hidden="true"
+                        ></i
+                    ></a>
+                </div>
+                <div class="footer-grid">
+                    <div class="footer-description">
+                        <h2>Intelligence. With accountability.</h2>
+                        <p>
+                            Connect evidence, improve workflows and support the people responsible
+                            for security decisions.
+                        </p>
+                        <a href="https://oryvantai.tech/"
+                            >oryvantai.tech
+                            <i
+                                class="fa-solid fa-arrow-up-right-from-square"
+                                aria-hidden="true"
+                            ></i
+                        ></a>
+                    </div>
+                    <div>
+                        <h2>Solutions</h2>
+                        <ul>
+                            <li>
+                                <a href="solutions.html#intelligence"
+                                    >Security Intelligence Workbench</a
+                                >
+                            </li>
+                            <li>
+                                <a href="solutions.html#response"
+                                    >Procedure &amp; Response Studio</a
+                                >
+                            </li>
+                            <li>
+                                <a href="solutions.html#learning"
+                                    >Learning &amp; Reporting Workspace</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Services</h2>
+                        <ul>
+                            <li>
+                                <a href="services.html#ai-cybersecurity"
+                                    >AI Powered Cybersecurity</a
+                                >
+                            </li>
+                            <li><a href="services.html#soc-automation">SOC Automation</a></li>
+                            <li><a href="services.html#siem-automation">SIEM Automation</a></li>
+                            <li><a href="services.html#threat-detection">Threat Detection</a></li>
+                            <li>
+                                <a href="services.html#security-analytics">Security Analytics</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Company</h2>
+                        <ul>
+                            <li><a href="index.html#about">About OryvantAI</a></li>
+                            <li><a href="index.html#approach">Our Approach</a></li>
+                            <li><a href="index.html#industries">Industries</a></li>
+                            <li><a href="index.html#insights">Insights</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h2>Contact</h2>
+                        <a href="mailto:bilal@oryvantai.tech">bilal@oryvantai.tech</a>
+                        <p>Muhammad Bilal<br /><span>Founder &amp; CEO</span></p>
+                        <span class="footer-control"
+                            ><i
+                                class="fa-solid fa-user-shield"
+                                aria-hidden="true"
+                            ></i>
+                            People retain responsibility.</span
+                        >
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2026 OryvantAI. All rights reserved.</p>
+                    <div>
+                        <button
+                            type="button"
+                            data-dialog="privacy-dialog"
+                        >
+                            Privacy</button
+                        ><button
+                            type="button"
+                            data-dialog="cookie-dialog"
+                        >
+                            Cookie Preferences</button
+                        ><a
+                            href="#home"
+                            aria-label="Back to top"
+                            ><i
+                                class="fa-solid fa-arrow-up"
+                                aria-hidden="true"
+                            ></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <aside
+            class="cookie-banner"
+            aria-label="Cookie choices"
+            id="cookie-banner"
+            hidden
+        >
+            <div>
+                <p class="cookie-title">Your privacy. Your choice.</p>
+                <p>
+                    This page stores your preferences locally. Optional analytics and marketing are
+                    off unless you choose otherwise.
+                </p>
+            </div>
+            <div class="cookie-actions">
+                <button
+                    class="button button-primary"
+                    id="accept-cookies"
+                >
+                    Accept All</button
+                ><button
+                    class="button button-outline"
+                    id="reject-cookies"
+                >
+                    Reject Non Essential</button
+                ><button
+                    class="cookie-manage"
+                    data-dialog="cookie-dialog"
+                >
+                    Manage Preferences
+                </button>
+            </div>
+        </aside>
+        <dialog
+            id="cookie-dialog"
+            class="preference-dialog"
+            aria-labelledby="cookie-title"
+        >
+            <div class="dialog-header">
+                <h2 id="cookie-title">Cookie Preferences</h2>
+                <button
+                    class="close-dialog"
+                    aria-label="Close cookie preferences"
+                >
+                    ×
+                </button>
+            </div>
+            <p>
+                Choose how optional technologies may be used. This homepage currently includes no
+                analytics or marketing scripts.
+            </p>
+            <form id="cookie-form">
+                <div class="preference-row">
+                    <div>
+                        <h3>Necessary</h3>
+                        <p>Local preference storage helps this page remember your choices.</p>
+                    </div>
+                    <span class="always-on">Always on</span>
+                </div>
+                <label class="preference-row"
+                    ><span
+                        ><strong>Analytics</strong
+                        ><span>Optional measurement, if configured in a future update.</span></span
+                    ><input
+                        type="checkbox"
+                        name="analytics" /></label
+                ><label class="preference-row"
+                    ><span
+                        ><strong>Marketing</strong
+                        ><span
+                            >Optional campaign measurement, if configured in a future update.</span
+                        ></span
+                    ><input
+                        type="checkbox"
+                        name="marketing"
+                /></label>
+                <p
+                    class="storage-message"
+                    role="status"
+                    hidden
+                >
+                    Your browser could not save preferences. Your choice will apply for this visit.
+                </p>
+                <button
+                    class="button button-primary"
+                    type="submit"
+                >
+                    Save Preferences
+                </button>
+            </form>
+        </dialog>
+        <dialog
+            id="privacy-dialog"
+            class="preference-dialog"
+            aria-labelledby="privacy-title"
+        >
+            <div class="dialog-header">
+                <h2 id="privacy-title">Website Privacy</h2>
+                <button
+                    class="close-dialog"
+                    aria-label="Close privacy information"
+                >
+                    ×
+                </button>
+            </div>
+            <p>
+                This page does not send or store contact form entries and does not collect form
+                submissions or load analytics, marketing trackers or third party fonts. Your cookie
+                preferences are stored in this browser for up to 180 days.
+            </p>
+            <h3>Contacting OryvantAI</h3>
+            <p>
+                Email links open your email application. Information you choose to send is handled
+                through that service. Please do not include sensitive security evidence in an
+                initial message.
+            </p>
+            <h3>Hosting and server records</h3>
+            <p>
+                The eventual hosting service may process connection information and access logs. Its
+                configuration, retention and applicable privacy terms must be confirmed by the site
+                owner before launch.
+            </p>
+            <h3>Questions and preferences</h3>
+            <p>
+                Contact <a href="mailto:bilal@oryvantai.tech">bilal@oryvantai.tech</a>. You can
+                reopen Cookie Preferences from the footer at any time.
+            </p>
+            <button class="button button-primary close-dialog">Close</button>
+        </dialog>
+        <noscript
+            ><div class="noscript-note">
+                JavaScript is off. All page content and FAQs remain available. Contact OryvantAI at
+                bilal@oryvantai.tech. No optional tracking is loaded.
+            </div></noscript
+        >
+    </body>
+</html>
