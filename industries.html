@@ -1,0 +1,2079 @@
+<!DOCTYPE html>
+<html
+    lang="en"
+    class="no-js"
+>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <meta
+            name="referrer"
+            content="strict-origin-when-cross-origin"
+        />
+        <meta
+            name="theme-color"
+            content="#07152F"
+        />
+        <title>Industries | OryvantAI</title>
+        <meta
+            name="description"
+            content="AI powered cybersecurity shaped around financial services, healthcare, telecom, OT and other relevant operating environments. Explore possible project scopes and controls."
+        />
+        <link
+            rel="canonical"
+            href="https://oryvantai.tech/industries.html"
+        />
+        <meta
+            property="og:type"
+            content="website"
+        />
+        <meta
+            property="og:title"
+            content="Industries | OryvantAI"
+        />
+        <meta
+            property="og:description"
+            content="Your tools. Your experience. A clearer path from evidence to action."
+        />
+        <meta
+            property="og:url"
+            content="https://oryvantai.tech/industries.html"
+        />
+        <meta
+            property="og:image"
+            content="https://oryvantai.tech/assets/images/social-cover.webp"
+        />
+        <meta
+            property="og:image:alt"
+            content="OryvantAI brand artwork with cyan network connections"
+        />
+        <meta
+            name="twitter:card"
+            content="summary_large_image"
+        />
+        <meta
+            name="twitter:title"
+            content="Industries | OryvantAI"
+        />
+        <meta
+            name="twitter:description"
+            content="A clearer path from evidence to action."
+        />
+        <meta
+            name="twitter:image"
+            content="https://oryvantai.tech/assets/images/social-cover.webp"
+        />
+        <link
+            rel="icon"
+            href="assets/images/favicon.png"
+        />
+        <link
+            rel="preload"
+            as="image"
+            href="assets/images/hero-network.webp"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/css/main.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="industries.css"
+        />
+        <script
+            defer
+            src="assets/js/main.min.js"
+        ></script>
+ 
+ <style>
+    /* Industries page additions. Shared site components remain in the global stylesheet. */
+.industries-page .primary-nav .nav-home {
+    color: var(--brand-text);
+}
+.industries-page .nav-dropdown-toggle[aria-current="page"] {
+    color: #1130a2;
+}
+.industries-hero {
+    padding: 150px 0 66px;
+    background:
+        linear-gradient(100deg, #07152f 35%, #07152fe8),
+        url("assets/images/hero-network.webp") right center / 50% auto no-repeat;
+}
+.industries-breadcrumb {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    color: #54e0fc;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.industries-breadcrumb a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    color: #c7d8e9;
+}
+.industries-hero h1 {
+    font-size: clamp(56px, 4.4vw, 68px);
+    line-height: 1.12;
+    letter-spacing: -0.05em;
+    margin-bottom: 26px;
+}
+.industries-lead {
+    max-width: 730px;
+    font-size: 18px;
+    line-height: 1.85;
+    color: #b4cce0;
+    margin-bottom: 30px;
+}
+.industries-overview {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+.industries-overview .industry-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background: white;
+}
+.industries-overview .industry-card > p {
+    font-size: 16px;
+    line-height: 1.85;
+}
+.industries-overview .industry-card .text-link {
+    width: 100%;
+    height: auto;
+    background: transparent;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    min-height: 48px;
+    margin-top: auto;
+    padding-top: 22px;
+    border-top: 1px solid var(--brand-border);
+    font-size: 14px;
+}
+.industry-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 85px;
+    align-items: start;
+}
+.industry-detail > div {
+    min-width: 0;
+}
+.industry-context-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 66px;
+    height: 66px;
+    background: #0d89f10a;
+    border: 1px solid #0d89f126;
+    border-radius: 14px;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.industry-context .section-heading {
+    margin-bottom: 28px;
+}
+.industry-context h2 {
+    font-size: clamp(40px, 3.2vw, 50px);
+    line-height: 1.2;
+}
+.industry-label {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: #1130a2;
+    margin-bottom: 12px;
+    letter-spacing: 0.035em;
+}
+.industry-focus {
+    font-size: 18px;
+    line-height: 1.85;
+    margin: 0;
+}
+.industry-scope {
+    border-top: 1px solid #0d89f140;
+}
+.industry-scope-row {
+    display: flex;
+    gap: 22px;
+    border-bottom: 1px solid var(--brand-border);
+    padding: 28px 0;
+}
+.industry-scope-row > span {
+    flex: none;
+    font-size: 25px;
+    padding-top: 3px;
+}
+.industry-scope h3 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.industry-scope p {
+    font-size: 16px;
+    line-height: 1.9;
+    margin: 0;
+}
+.industry-boundary {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    margin-top: 26px;
+    border: 1px solid #0d89f130;
+    border-left: 3px solid #0d89f1;
+    border-radius: 10px;
+    background: #0d89f108;
+}
+.industry-boundary > span {
+    font-size: 24px;
+    flex: none;
+    padding-top: 3px;
+}
+.industry-boundary h3 {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: #1130a2;
+    letter-spacing: 0.025em;
+}
+.industry-scope .industry-scope-note {
+    font-size: 14px;
+    margin-top: 22px;
+}
+.industry-detail-reverse .industry-context {
+    order: 2;
+}
+.industries-ot .industry-label,
+.industries-ot .industry-boundary h3 {
+    color: #54e0fc;
+}
+.industries-ot .industry-focus,
+.industries-ot .industry-scope p {
+    color: #b4cce0;
+}
+.industries-ot .industry-scope-row {
+    border-color: #ffffff20;
+}
+.industries-ot .industry-context-icon {
+    background: #12d1fd08;
+    border-color: #12d1fd30;
+}
+.industries-ot .industry-boundary {
+    background: #12d1fd08;
+    border-color: #12d1fd40;
+}
+.industry-controls {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+.industry-control {
+    padding: 30px;
+    border: 1px solid var(--brand-border);
+    border-radius: var(--radius-card);
+    background: white;
+    min-width: 0;
+}
+.industry-control > i {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 25px;
+}
+.industry-control h3 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 17px;
+}
+.industry-control p {
+    font-size: 16px;
+    line-height: 1.85;
+    margin: 0;
+}
+.industry-steps {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 35px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.industry-steps::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: #0d89f140;
+    top: 26px;
+    left: 26px;
+    right: 26px;
+}
+.industry-steps li {
+    position: relative;
+}
+.industry-steps li > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 54px;
+    background: #f3f8fc;
+    border: 1px solid #0d89f140;
+    color: #1130a2;
+    border-radius: 12px;
+    font-family: var(--font-mono);
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.industry-steps h3 {
+    font-size: 23px;
+    line-height: 1.5;
+    margin: 0;
+}
+.industry-readiness {
+    font-size: 17px;
+    line-height: 1.85;
+    margin: 35px 0 0;
+    padding: 25px 28px;
+    background: #0d89f108;
+    border-left: 3px solid #0d89f1;
+    border-radius: 8px;
+}
+.industry-faq {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 75px;
+    align-items: start;
+}
+.industries-cta {
+    padding: 72px 0;
+}
+.industries-cta .contact-panel {
+    padding: 52px;
+}
+.industries-cta .contact-panel > div:first-child {
+    min-width: 0;
+}
+@media (max-width: 1279px) {
+    .industry-detail {
+        gap: 50px;
+    }
+    .industry-controls {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .industry-faq {
+        gap: 40px;
+    }
+}
+@media (max-width: 1023px) {
+    .industries-overview {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .industry-detail {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+    .industry-detail-reverse .industry-context {
+        order: 0;
+    }
+    .industry-context h2 {
+        font-size: 44px;
+    }
+    .industry-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .industry-steps::before {
+        display: none;
+    }
+    .industry-faq {
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+    .industries-cta .contact-panel {
+        padding: 42px;
+    }
+}
+@media (max-width: 767px) {
+    .industries-hero {
+        padding: 120px 0 50px;
+        background-size: 100% auto;
+    }
+    .industries-breadcrumb {
+        margin-bottom: 24px;
+    }
+    .industries-hero h1 {
+        font-size: 41px;
+        line-height: 1.15;
+    }
+    .industries-lead {
+        font-size: 17px;
+    }
+    .industries-overview,
+    .industry-controls {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+    .industry-context h2 {
+        font-size: 36px;
+    }
+    .industry-context-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 26px;
+    }
+    .industry-focus {
+        font-size: 17px;
+    }
+    .industry-scope-row {
+        gap: 18px;
+        padding: 25px 0;
+    }
+    .industry-boundary {
+        padding: 24px 21px;
+        gap: 16px;
+    }
+    .industry-control {
+        padding: 29px;
+    }
+    .industry-steps {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    .industry-steps::before {
+        display: block;
+        top: 26px;
+        bottom: 26px;
+        left: 26px;
+        right: auto;
+        width: 1px;
+        height: auto;
+    }
+    .industry-steps li {
+        display: flex;
+        gap: 22px;
+        align-items: center;
+    }
+    .industry-steps li > span {
+        flex: none;
+        margin: 0;
+    }
+    .industry-steps h3 {
+        font-size: 22px;
+    }
+    .industry-readiness {
+        font-size: 16px;
+        padding: 25px;
+    }
+    .industries-cta {
+        padding: 64px 0;
+    }
+    .industries-cta .contact-panel {
+        padding: 35px 26px;
+    }
+    .industries-cta .contact-panel h2 {
+        font-size: 36px;
+    }
+}
+@media (max-width: 389px) {
+    .industries-hero h1 {
+        font-size: 38px;
+    }
+    .industry-context h2 {
+        font-size: 34px;
+    }
+    .industry-control {
+        padding: 26px;
+    }
+}
+
+ </style>
+ 
+    </head>
+    <body class="industries-page">
+        <a
+            class="skip-link"
+            href="#main"
+            >Skip to content</a
+        >
+        <div class="topbar">
+            <div class="page-container flex items-center justify-between">
+                <p>
+                    <i
+                        class="fa-solid fa-shield-halved"
+                        aria-hidden="true"
+                    ></i>
+                    INTELLIGENCE FOR ACCOUNTABLE SECURITY OPERATIONS
+                </p>
+                <a href="mailto:bilal@oryvantai.tech"
+                    >bilal@oryvantai.tech
+                    <i
+                        class="fa-solid fa-arrow-up-right-from-square"
+                        aria-hidden="true"
+                    ></i
+                ></a>
+            </div>
+        </div>
+        <!-- Header -->
+        <header class="site-header">
+            <div class="header-inner">
+                <a
+                    class="brand"
+                    href="index.html"
+                    aria-label="OryvantAI home"
+                    ><img
+                        src="assets/images/logo-240.webp"
+                        width="42"
+                        height="42"
+                        alt=""
+                    /><span>Oryvant<span class="brand-ai">AI</span></span></a
+                ><button
+                    class="mobile-toggle"
+                    aria-controls="primary-nav"
+                    aria-expanded="false"
+                >
+                    <span
+                        class="menu-lines"
+                        aria-hidden="true"
+                    ></span
+                    ><span class="sr-only">Open navigation</span>
+                </button>
+                <nav
+                    class="primary-nav"
+                    id="primary-nav"
+                    aria-label="Main navigation"
+                >
+                    <div class="mobile-nav-heading">
+                        <span>Explore OryvantAI</span><span>SECURITY + INTELLIGENCE</span>
+                    </div>
+                    <a
+                        href="index.html"
+                        class="nav-home"
+                        >Home</a
+                    >
+                    <div class="nav-group">
+                        <button
+                            class="nav-dropdown-toggle"
+                            aria-expanded="false"
+                            aria-controls="menu-solutions"
+                        >
+                            Solutions<i
+                                class="fa-solid fa-chevron-down"
+                                aria-hidden="true"
+                            ></i>
+                        </button>
+                        <div
+                            class="nav-dropdown menu-solutions"
+                            id="menu-solutions"
+                            hidden
+                        >
+                            <div class="menu-heading">
+                                <span>SOLUTIONS</span><span>BUILT AROUND YOUR OPERATIONS</span>
+                            </div>
+                            <div class="menu-grid">
+                                <a href="solutions.html#intelligence"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-fingerprint"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Security Intelligence Workbench</strong
+                                        ><small>Evidence and investigation</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="solutions.html#response"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-shield-halved"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Procedure &amp; Response Studio</strong
+                                        ><small>Procedures and reviewed response</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="solutions.html#learning"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-chart-line"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Learning &amp; Reporting Workspace</strong
+                                        ><small>Learning and decision support</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                            <div class="menu-bottom">
+                                Controlled AI. Clear accountability.<a href="contact.html"
+                                    >Talk to an Expert
+                                    <i
+                                        class="fa-solid fa-arrow-right"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-group">
+                        <button
+                            class="nav-dropdown-toggle"
+                            aria-expanded="false"
+                            aria-controls="menu-services"
+                        >
+                            Services<i
+                                class="fa-solid fa-chevron-down"
+                                aria-hidden="true"
+                            ></i>
+                        </button>
+                        <div
+                            class="nav-dropdown menu-services"
+                            id="menu-services"
+                            hidden
+                        >
+                            <div class="menu-heading">
+                                <span>SERVICES</span><span>BUILT AROUND YOUR OPERATIONS</span>
+                            </div>
+                            <div class="menu-grid">
+                                <a href="services.html#ai-cybersecurity"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-brain"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>AI Powered Cybersecurity</strong
+                                        ><small>Controlled intelligence</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="services.html#soc-automation"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-diagram-project"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>SOC Automation</strong
+                                        ><small>Analyst workflow assistance</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="services.html#siem-automation"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-database"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>SIEM Automation</strong
+                                        ><small>Logs and validated queries</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="services.html#threat-detection"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-crosshairs"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Threat Detection</strong
+                                        ><small>Context and detection quality</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="services.html#security-analytics"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-chart-line"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Security Analytics</strong
+                                        ><small>Trusted records into reporting</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                            <div class="menu-bottom">
+                                Controlled AI. Clear accountability.<a href="contact.html"
+                                    >Talk to an Expert
+                                    <i
+                                        class="fa-solid fa-arrow-right"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-group">
+                        <button
+                            class="nav-dropdown-toggle"
+                            aria-expanded="false"
+                            aria-controls="menu-industries"
+                            aria-current="page"
+                        >
+                            Industries<i
+                                class="fa-solid fa-chevron-down"
+                                aria-hidden="true"
+                            ></i>
+                        </button>
+                        <div
+                            class="nav-dropdown menu-industries"
+                            id="menu-industries"
+                            hidden
+                        >
+                            <div class="menu-heading">
+                                <span>INDUSTRIES</span><span>BUILT AROUND YOUR OPERATIONS</span>
+                            </div>
+                            <div class="menu-grid">
+                                <a href="#financial-services"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-building-columns"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Financial Services</strong
+                                        ><small>Investigation and evidence</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="#healthcare"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-heart-pulse"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Healthcare</strong
+                                        ><small>Sensitive access and incidents</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="#telecom"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-tower-broadcast"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Telecom</strong
+                                        ><small>Visibility and handovers</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="#operational-technology"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-industry"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Operational Technology</strong
+                                        ><small>Operational safety and control</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="#regulated-enterprises"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-building-shield"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Regulated Enterprises</strong
+                                        ><small>Defined requirements and scope</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="#managed-security-providers"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-network-wired"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Managed Security Providers</strong
+                                        ><small>Existing team enablement</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                            <div class="menu-bottom">
+                                Controlled AI. Clear accountability.<a href="contact.html"
+                                    >Talk to an Expert
+                                    <i
+                                        class="fa-solid fa-arrow-right"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="index.html#about">Company</a><a href="insights.html">Insights</a
+                    ><a href="contact.html">Contact</a
+                    ><a
+                        class="button button-primary mobile-cta"
+                        href="contact.html"
+                        >Talk to an Expert
+                        <i
+                            class="fa-solid fa-arrow-up-right-from-square"
+                            aria-hidden="true"
+                        ></i
+                    ></a>
+                    <p class="mobile-nav-note">
+                        Your tools. Your experience.<br />
+                        A clearer path from evidence to action.
+                    </p>
+                </nav>
+                <a
+                    class="button button-primary desktop-cta"
+                    href="contact.html"
+                    >Talk to an Expert
+                    <i
+                        class="fa-solid fa-arrow-up-right-from-square"
+                        aria-hidden="true"
+                    ></i
+                ></a>
+            </div>
+        </header>
+        <div
+            class="nav-backdrop"
+            hidden
+        ></div>
+
+        <!-- Services Hero -->
+        <!-- Contact Hero -->
+        <!-- Insights Hero -->
+        <!-- Industries Hero -->
+        <main id="main">
+            <section
+                class="industries-hero dark-section"
+                id="home"
+                aria-labelledby="industries-title"
+            >
+                <div class="page-container">
+                    <nav
+                        class="industries-breadcrumb"
+                        aria-label="Breadcrumb"
+                    >
+                        <a href="index.html">Home</a><span aria-hidden="true">/</span
+                        ><span aria-current="page">Industries</span>
+                    </nav>
+                    <p class="eyebrow"><span aria-hidden="true"></span>INDUSTRIES</p>
+                    <h1 id="industries-title">
+                        Your operating context.<br />
+                        <span class="logo-gradient-text">Your security priorities.</span>
+                    </h1>
+                    <p class="industries-lead">
+                        AI powered cybersecurity shaped around your systems, evidence, people and
+                        operational constraints.
+                    </p>
+                    <div class="button-row">
+                        <a
+                            class="button button-primary"
+                            href="contact.html"
+                            >Discuss Your Environment<i
+                                class="fa-solid fa-arrow-up-right-from-square"
+                                aria-hidden="true"
+                            ></i></a
+                        ><a
+                            class="button button-secondary"
+                            href="#industries"
+                            >Explore Industry Contexts<i
+                                class="fa-solid fa-arrow-up-right-from-square"
+                                aria-hidden="true"
+                            ></i
+                        ></a>
+                    </div>
+                </div>
+            </section>
+            <!-- Industry Overview -->
+            <section
+                class="section light-section"
+                id="industries"
+            >
+                <div class="page-container">
+                    <div class="section-heading">
+                        <p class="eyebrow">
+                            <span aria-hidden="true"></span>BUILT AROUND YOUR ENVIRONMENT
+                        </p>
+                        <h2>
+                            Different environments.<br />
+                            A controlled approach.
+                        </h2>
+                        <p>
+                            The right starting point depends on your evidence, operating
+                            responsibilities and approved access.
+                        </p>
+                    </div>
+                    <div class="industries-overview">
+                        <article class="industry-card">
+                            <span
+                                ><i
+                                    class="fa-solid fa-building-columns"
+                                    aria-hidden="true"
+                                ></i
+                            ></span>
+                            <h3>Financial Services</h3>
+                            <p>
+                                Identity investigations and incident reporting within the
+                                institution’s applicable requirements.
+                            </p>
+                            <a
+                                class="text-link"
+                                href="#financial-services"
+                                >Explore Context<i
+                                    class="fa-solid fa-arrow-up-right-from-square"
+                                    aria-hidden="true"
+                                ></i
+                            ></a>
+                        </article>
+                        <article class="industry-card">
+                            <span
+                                ><i
+                                    class="fa-solid fa-heart-pulse"
+                                    aria-hidden="true"
+                                ></i
+                            ></span>
+                            <h3>Healthcare</h3>
+                            <p>
+                                Access event review and incident evidence involving sensitive
+                                information.
+                            </p>
+                            <a
+                                class="text-link"
+                                href="#healthcare"
+                                >Explore Context<i
+                                    class="fa-solid fa-arrow-up-right-from-square"
+                                    aria-hidden="true"
+                                ></i
+                            ></a>
+                        </article>
+                        <article class="industry-card">
+                            <span
+                                ><i
+                                    class="fa-solid fa-tower-broadcast"
+                                    aria-hidden="true"
+                                ></i
+                            ></span>
+                            <h3>Telecom</h3>
+                            <p>
+                                Log source reliability, permitted cross system context and
+                                controlled escalation.
+                            </p>
+                            <a
+                                class="text-link"
+                                href="#telecom"
+                                >Explore Context<i
+                                    class="fa-solid fa-arrow-up-right-from-square"
+                                    aria-hidden="true"
+                                ></i
+                            ></a>
+                        </article>
+                        <article class="industry-card">
+                            <span
+                                ><i
+                                    class="fa-solid fa-industry"
+                                    aria-hidden="true"
+                                ></i
+                            ></span>
+                            <h3>Operational Technology</h3>
+                            <p>
+                                Authorised telemetry integration and evidence review that respect
+                                operational constraints.
+                            </p>
+                            <a
+                                class="text-link"
+                                href="#operational-technology"
+                                >Explore Context<i
+                                    class="fa-solid fa-arrow-up-right-from-square"
+                                    aria-hidden="true"
+                                ></i
+                            ></a>
+                        </article>
+                        <article class="industry-card">
+                            <span
+                                ><i
+                                    class="fa-solid fa-building-shield"
+                                    aria-hidden="true"
+                                ></i
+                            ></span>
+                            <h3>Regulated Enterprises</h3>
+                            <p>
+                                Recurring security work with explicit evidence, governance and
+                                processing requirements.
+                            </p>
+                            <a
+                                class="text-link"
+                                href="#regulated-enterprises"
+                                >Explore Context<i
+                                    class="fa-solid fa-arrow-up-right-from-square"
+                                    aria-hidden="true"
+                                ></i
+                            ></a>
+                        </article>
+                        <article class="industry-card">
+                            <span
+                                ><i
+                                    class="fa-solid fa-network-wired"
+                                    aria-hidden="true"
+                                ></i
+                            ></span>
+                            <h3>Managed Security Providers</h3>
+                            <p>
+                                AI enablement around established security processes and agreed
+                                delivery responsibilities.
+                            </p>
+                            <a
+                                class="text-link"
+                                href="#managed-security-providers"
+                                >Explore Context<i
+                                    class="fa-solid fa-arrow-up-right-from-square"
+                                    aria-hidden="true"
+                                ></i
+                            ></a>
+                        </article>
+                    </div>
+                    <p class="section-note">
+                        Relevant environments and example project scopes, not customer references or
+                        completed deployments.
+                    </p>
+                </div>
+            </section>
+            <!-- Financial Services -->
+            <section
+                class="section"
+                id="financial-services"
+            >
+                <div class="page-container">
+                    <div class="industry-detail">
+                        <div class="industry-context">
+                            <span class="industry-context-icon"
+                                ><i
+                                    class="fa-solid fa-building-columns"
+                                    aria-hidden="true"
+                                ></i
+                            ></span>
+                            <div class="section-heading">
+                                <p class="eyebrow">
+                                    <span aria-hidden="true"></span>01 / FINANCIAL SERVICES
+                                </p>
+                                <h2>
+                                    Clearer investigations.<br />
+                                    Reviewable incident evidence.
+                                </h2>
+                            </div>
+                            <p class="industry-label">OPERATIONAL FOCUS</p>
+                            <p class="industry-focus">
+                                Identity investigations and incident reporting within the
+                                institution’s applicable requirements.
+                            </p>
+                        </div>
+                        <div class="industry-scope">
+                            <div class="industry-scope-row">
+                                <span
+                                    ><i
+                                        class="fa-solid fa-route"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                                <div>
+                                    <h3>Starting workflow</h3>
+                                    <p>
+                                        Bring permitted identity events, relevant case context and
+                                        source references into a reviewable investigation brief.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="industry-scope-row">
+                                <span
+                                    ><i
+                                        class="fa-solid fa-file-lines"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                                <div>
+                                    <h3>Useful output</h3>
+                                    <p>
+                                        A case brief, incident timeline and evidence references for
+                                        authorised review.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="industry-boundary">
+                                <span
+                                    ><i
+                                        class="fa-solid fa-shield-halved"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                                <div>
+                                    <h3>Control boundary</h3>
+                                    <p>
+                                        Access, processing arrangements and applicable institutional
+                                        requirements must be confirmed for the specific scope.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Healthcare -->
+            <section
+                class="section light-section industry-detail-reverse"
+                id="healthcare"
+            >
+                <div class="page-container">
+                    <div class="industry-detail">
+                        <div class="industry-context">
+                            <span class="industry-context-icon"
+                                ><i
+                                    class="fa-solid fa-heart-pulse"
+                                    aria-hidden="true"
+                                ></i
+                            ></span>
+                            <div class="section-heading">
+                                <p class="eyebrow">
+                                    <span aria-hidden="true"></span>02 / HEALTHCARE
+                                </p>
+                                <h2>
+                                    Useful security context.<br />
+                                    Careful information handling.
+                                </h2>
+                            </div>
+                            <p class="industry-label">OPERATIONAL FOCUS</p>
+                            <p class="industry-focus">
+                                Access event review and incident evidence involving sensitive
+                                information.
+                            </p>
+                        </div>
+                        <div class="industry-scope">
+                            <div class="industry-scope-row">
+                                <span
+                                    ><i
+                                        class="fa-solid fa-route"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                                <div>
+                                    <h3>Starting workflow</h3>
+                                    <p>
+                                        Review permitted access events using approved context and
+                                        agreed data handling arrangements.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="industry-scope-row">
+                                <span
+                                    ><i
+                                        class="fa-solid fa-file-lines"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                                <div>
+                                    <h3>Useful output</h3>
+                                    <p>
+                                        A source linked review brief with open questions and a named
+                                        reviewer.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="industry-boundary">
+                                <span
+                                    ><i
+                                        class="fa-solid fa-shield-halved"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                                <div>
+                                    <h3>Control boundary</h3>
+                                    <p>
+                                        Confirm permitted information, access responsibilities and
+                                        processing boundaries before connecting evidence.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Telecom -->
+            <section
+                class="section"
+                id="telecom"
+            >
+                <div class="page-container">
+                    <div class="industry-detail">
+                        <div class="industry-context">
+                            <span class="industry-context-icon"
+                                ><i
+                                    class="fa-solid fa-tower-broadcast"
+                                    aria-hidden="true"
+                                ></i
+                            ></span>
+                            <div class="section-heading">
+                                <p class="eyebrow"><span aria-hidden="true"></span>03 / TELECOM</p>
+                                <h2>
+                                    Improve visibility.<br />
+                                    Keep handovers clear.
+                                </h2>
+                            </div>
+                            <p class="industry-label">OPERATIONAL FOCUS</p>
+                            <p class="industry-focus">
+                                Log source reliability, permitted cross system context and
+                                controlled escalation.
+                            </p>
+                        </div>
+                        <div class="industry-scope">
+                            <div class="industry-scope-row">
+                                <span
+                                    ><i
+                                        class="fa-solid fa-route"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                                <div>
+                                    <h3>Starting workflow</h3>
+                                    <p>
+                                        Identify collection gaps and assemble relevant evidence for
+                                        investigation and handover.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="industry-scope-row">
+                                <span
+                                    ><i
+                                        class="fa-solid fa-file-lines"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                                <div>
+                                    <h3>Useful output</h3>
+                                    <p>
+                                        A visibility gap record, contextual brief and reviewed
+                                        improvement backlog.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="industry-boundary">
+                                <span
+                                    ><i
+                                        class="fa-solid fa-shield-halved"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                                <div>
+                                    <h3>Control boundary</h3>
+                                    <p>
+                                        Confirm system access, operational ownership and escalation
+                                        responsibilities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Operational Technology -->
+            <section
+                class="section dark-section industries-ot industry-detail-reverse"
+                id="operational-technology"
+            >
+                <div class="page-container">
+                    <div class="industry-detail">
+                        <div class="industry-context">
+                            <span class="industry-context-icon"
+                                ><i
+                                    class="fa-solid fa-industry"
+                                    aria-hidden="true"
+                                ></i
+                            ></span>
+                            <div class="section-heading">
+                                <p class="eyebrow">
+                                    <span aria-hidden="true"></span>04 / OPERATIONAL TECHNOLOGY
+                                </p>
+                                <h2>
+                                    Operational safety.<br />
+                                    Explicit authority.
+                                </h2>
+                            </div>
+                            <p class="industry-label">OPERATIONAL FOCUS</p>
+                            <p class="industry-focus">
+                                Authorised telemetry integration and evidence review that respect
+                                operational constraints.
+                            </p>
+                        </div>
+                        <div class="industry-scope">
+                            <div class="industry-scope-row">
+                                <span
+                                    ><i
+                                        class="fa-solid fa-route"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                                <div>
+                                    <h3>Starting workflow</h3>
+                                    <p>
+                                        Begin with passive or approved read only telemetry and
+                                        permitted investigation context.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="industry-scope-row">
+                                <span
+                                    ><i
+                                        class="fa-solid fa-file-lines"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                                <div>
+                                    <h3>Useful output</h3>
+                                    <p>
+                                        A telemetry readiness assessment, reviewable evidence brief
+                                        and proposed next checks.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="industry-boundary">
+                                <span
+                                    ><i
+                                        class="fa-solid fa-shield-halved"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                                <div>
+                                    <h3>OT SAFETY FIRST</h3>
+                                    <p>
+                                        Production isolation, active testing and control system
+                                        changes require the asset owner’s operational and safety
+                                        approval.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Regulated Enterprises -->
+            <section
+                class="section"
+                id="regulated-enterprises"
+            >
+                <div class="page-container">
+                    <div class="industry-detail">
+                        <div class="industry-context">
+                            <span class="industry-context-icon"
+                                ><i
+                                    class="fa-solid fa-building-shield"
+                                    aria-hidden="true"
+                                ></i
+                            ></span>
+                            <div class="section-heading">
+                                <p class="eyebrow">
+                                    <span aria-hidden="true"></span>05 / REGULATED ENTERPRISES
+                                </p>
+                                <h2>
+                                    Defined requirements.<br />
+                                    A reviewable scope.
+                                </h2>
+                            </div>
+                            <p class="industry-label">OPERATIONAL FOCUS</p>
+                            <p class="industry-focus">
+                                Recurring security work with explicit evidence, governance and
+                                processing requirements.
+                            </p>
+                        </div>
+                        <div class="industry-scope">
+                            <div class="industry-scope-row">
+                                <span
+                                    ><i
+                                        class="fa-solid fa-route"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                                <div>
+                                    <h3>Starting workflow</h3>
+                                    <p>
+                                        Select one investigation, procedure or reporting task and
+                                        define its sources, owner and acceptance criteria.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="industry-scope-row">
+                                <span
+                                    ><i
+                                        class="fa-solid fa-file-lines"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                                <div>
+                                    <h3>Useful output</h3>
+                                    <p>
+                                        An agreed workflow scope and evidence map for stakeholder
+                                        review.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="industry-boundary">
+                                <span
+                                    ><i
+                                        class="fa-solid fa-shield-halved"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                                <div>
+                                    <h3>Control boundary</h3>
+                                    <p>
+                                        Requirements depend on the organisation, activity and
+                                        jurisdiction. Confirm applicability during discovery.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Managed Security Providers -->
+            <section
+                class="section light-section industry-detail-reverse"
+                id="managed-security-providers"
+            >
+                <div class="page-container">
+                    <div class="industry-detail">
+                        <div class="industry-context">
+                            <span class="industry-context-icon"
+                                ><i
+                                    class="fa-solid fa-network-wired"
+                                    aria-hidden="true"
+                                ></i
+                            ></span>
+                            <div class="section-heading">
+                                <p class="eyebrow">
+                                    <span aria-hidden="true"></span>06 / MANAGED SECURITY PROVIDERS
+                                </p>
+                                <h2>
+                                    Enable the existing team.<br />
+                                    Keep service ownership visible.
+                                </h2>
+                            </div>
+                            <p class="industry-label">OPERATIONAL FOCUS</p>
+                            <p class="industry-focus">
+                                AI enablement around established security processes and agreed
+                                delivery responsibilities.
+                            </p>
+                        </div>
+                        <div class="industry-scope">
+                            <div class="industry-scope-row">
+                                <span
+                                    ><i
+                                        class="fa-solid fa-route"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                                <div>
+                                    <h3>Starting workflow</h3>
+                                    <p>
+                                        Improve case preparation, approved procedures or reporting
+                                        within an existing operating model.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="industry-scope-row">
+                                <span
+                                    ><i
+                                        class="fa-solid fa-file-lines"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                                <div>
+                                    <h3>Useful output</h3>
+                                    <p>
+                                        Reviewable case preparation and proposed workflow
+                                        improvements.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="industry-boundary">
+                                <span
+                                    ><i
+                                        class="fa-solid fa-shield-halved"
+                                        aria-hidden="true"
+                                    ></i
+                                ></span>
+                                <div>
+                                    <h3>Control boundary</h3>
+                                    <p>
+                                        Confirm provider eligibility, licensing where relevant,
+                                        customer permissions and operating responsibility before
+                                        delivery.
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="industry-scope-note">
+                                An engineering engagement is not a complete 24/7 managed SOC.
+                                Monitoring coverage and operating responsibilities must be agreed
+                                explicitly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Shared Control Principles -->
+            <section
+                class="section light-section"
+                id="industry-controls"
+            >
+                <div class="page-container">
+                    <div class="section-heading">
+                        <p class="eyebrow">
+                            <span aria-hidden="true"></span>SHARED CONTROL PRINCIPLES
+                        </p>
+                        <h2>
+                            Different environments.<br />
+                            The same accountability.
+                        </h2>
+                    </div>
+                    <div class="industry-controls">
+                        <article class="industry-control">
+                            <i
+                                class="fa-solid fa-database"
+                                aria-hidden="true"
+                            ></i>
+                            <h3>Permitted evidence</h3>
+                            <p>Connect only authorised sources.</p>
+                        </article>
+                        <article class="industry-control">
+                            <i
+                                class="fa-solid fa-user-shield"
+                                aria-hidden="true"
+                            ></i>
+                            <h3>Named decision owners</h3>
+                            <p>Keep operational authority explicit.</p>
+                        </article>
+                        <article class="industry-control">
+                            <i
+                                class="fa-solid fa-file-shield"
+                                aria-hidden="true"
+                            ></i>
+                            <h3>Approved procedures</h3>
+                            <p>Ground recommendations in accepted company knowledge.</p>
+                        </article>
+                        <article class="industry-control">
+                            <i
+                                class="fa-solid fa-link"
+                                aria-hidden="true"
+                            ></i>
+                            <h3>Reviewable outputs</h3>
+                            <p>Preserve source references, open questions and human review.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Choosing a Starting Point -->
+            <section
+                class="section"
+                id="starting-point"
+            >
+                <div class="page-container">
+                    <div class="section-heading">
+                        <p class="eyebrow">
+                            <span aria-hidden="true"></span>DEFINE THE FIRST SCOPE
+                        </p>
+                        <h2>
+                            Start with one workflow.<br />
+                            Define the boundary first.
+                        </h2>
+                    </div>
+                    <ol class="industry-steps">
+                        <li>
+                            <span>01</span>
+                            <h3>Identify the recurring problem</h3>
+                        </li>
+                        <li>
+                            <span>02</span>
+                            <h3>Confirm the evidence</h3>
+                        </li>
+                        <li>
+                            <span>03</span>
+                            <h3>Name the decision owner</h3>
+                        </li>
+                        <li>
+                            <span>04</span>
+                            <h3>Agree the operating boundary</h3>
+                        </li>
+                    </ol>
+                    <p class="industry-readiness">
+                        When telemetry, ownership or procedures are incomplete, begin with readiness
+                        and engineering.
+                    </p>
+                </div>
+            </section>
+            <!-- FAQ -->
+            <section
+                class="section light-section"
+                id="faq"
+            >
+                <div class="page-container">
+                    <div class="industry-faq">
+                        <div class="section-heading">
+                            <p class="eyebrow">
+                                <span aria-hidden="true"></span>BEFORE WE DEFINE THE SCOPE
+                            </p>
+                            <h2>
+                                Questions about<br />
+                                your environment.
+                            </h2>
+                        </div>
+                        <div class="faq-list">
+                            <details
+                                class="faq-item"
+                                open
+                            >
+                                <summary>
+                                    <span class="faq-num">01</span
+                                    ><span>Are these existing OryvantAI customer sectors?</span
+                                    ><span
+                                        class="faq-toggle"
+                                        aria-hidden="true"
+                                        >+</span
+                                    >
+                                </summary>
+                                <p>
+                                    These are relevant operating environments and example project
+                                    scopes, not customer references or claims of completed
+                                    deployments.
+                                </p>
+                            </details>
+                            <details class="faq-item">
+                                <summary>
+                                    <span class="faq-num">02</span
+                                    ><span>Can we start with one workflow?</span
+                                    ><span
+                                        class="faq-toggle"
+                                        aria-hidden="true"
+                                        >+</span
+                                    >
+                                </summary>
+                                <p>
+                                    Yes. Begin with a recurring task, permitted evidence, a named
+                                    decision owner and an agreed operating boundary.
+                                </p>
+                            </details>
+                            <details class="faq-item">
+                                <summary>
+                                    <span class="faq-num">03</span
+                                    ><span>Do you replace our existing security tools?</span
+                                    ><span
+                                        class="faq-toggle"
+                                        aria-hidden="true"
+                                        >+</span
+                                    >
+                                </summary>
+                                <p>
+                                    No replacement is assumed. Discovery reviews existing tools and
+                                    native capabilities before defining any custom work.
+                                </p>
+                            </details>
+                            <details class="faq-item">
+                                <summary>
+                                    <span class="faq-num">04</span
+                                    ><span>Does every organisation have the same requirements?</span
+                                    ><span
+                                        class="faq-toggle"
+                                        aria-hidden="true"
+                                        >+</span
+                                    >
+                                </summary>
+                                <p>
+                                    No. Requirements depend on the organisation, activity and
+                                    jurisdiction. Applicability and processing arrangements must be
+                                    confirmed for the specific scope.
+                                </p>
+                            </details>
+                            <details class="faq-item">
+                                <summary>
+                                    <span class="faq-num">05</span
+                                    ><span>Can operational technology be included?</span
+                                    ><span
+                                        class="faq-toggle"
+                                        aria-hidden="true"
+                                        >+</span
+                                    >
+                                </summary>
+                                <p>
+                                    An agreed scope can begin with authorised passive or read only
+                                    telemetry. Active testing, production isolation and control
+                                    system changes require the asset owner’s operational and safety
+                                    approval.
+                                </p>
+                            </details>
+                            <details class="faq-item">
+                                <summary>
+                                    <span class="faq-num">06</span
+                                    ><span
+                                        >Can an existing managed provider work with OryvantAI?</span
+                                    ><span
+                                        class="faq-toggle"
+                                        aria-hidden="true"
+                                        >+</span
+                                    >
+                                </summary>
+                                <p>
+                                    An eligible provider can explore an AI enablement scope around
+                                    its existing team. Licensing where relevant, customer
+                                    permissions, delivery boundaries and operating responsibilities
+                                    must be confirmed first.
+                                </p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Final CTA -->
+            <section class="industries-cta">
+                <div class="page-container">
+                    <div class="contact-panel">
+                        <div>
+                            <p class="eyebrow">
+                                <span aria-hidden="true"></span>DEFINE YOUR STARTING POINT
+                            </p>
+                            <h2>
+                                Start with your environment.<br />
+                                Focus on one security workflow.
+                            </h2>
+                            <p>
+                                Define the systems, evidence and people involved. Then agree the
+                                right starting scope.
+                            </p>
+                            <div class="button-row">
+                                <a
+                                    class="button button-primary"
+                                    href="contact.html"
+                                    >Talk to an Expert<i
+                                        class="fa-solid fa-arrow-up-right-from-square"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a
+                                    class="button button-secondary"
+                                    href="solutions.html"
+                                    >Explore Solutions<i
+                                        class="fa-solid fa-arrow-up-right-from-square"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-shield">
+                                <i
+                                    class="fa-solid fa-shield-halved"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+                            <p>A direct conversation</p>
+                            <a href="mailto:bilal@oryvantai.tech">bilal@oryvantai.tech</a
+                            ><span>oryvantai.tech</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="page-container">
+                <div class="footer-intro">
+                    <a
+                        class="brand"
+                        href="index.html"
+                        aria-label="OryvantAI home"
+                        ><img
+                            src="assets/images/logo-240.webp"
+                            width="42"
+                            height="42"
+                            alt=""
+                        /><span>Oryvant<span class="brand-ai">AI</span></span></a
+                    >
+                    <p>
+                        Custom AI powered cybersecurity.<br />
+                        Built around your operations.
+                    </p>
+                    <a href="contact.html"
+                        >Start a conversation
+                        <i
+                            class="fa-solid fa-arrow-up-right-from-square"
+                            aria-hidden="true"
+                        ></i
+                    ></a>
+                </div>
+                <div class="footer-grid">
+                    <div class="footer-description">
+                        <h2>Intelligence. With accountability.</h2>
+                        <p>
+                            Connect evidence, improve workflows and support the people responsible
+                            for security decisions.
+                        </p>
+                        <a href="https://oryvantai.tech/"
+                            >oryvantai.tech
+                            <i
+                                class="fa-solid fa-arrow-up-right-from-square"
+                                aria-hidden="true"
+                            ></i
+                        ></a>
+                    </div>
+                    <div>
+                        <h2>Solutions</h2>
+                        <ul>
+                            <li>
+                                <a href="solutions.html#intelligence"
+                                    >Security Intelligence Workbench</a
+                                >
+                            </li>
+                            <li>
+                                <a href="solutions.html#response"
+                                    >Procedure &amp; Response Studio</a
+                                >
+                            </li>
+                            <li>
+                                <a href="solutions.html#learning"
+                                    >Learning &amp; Reporting Workspace</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Services</h2>
+                        <ul>
+                            <li>
+                                <a href="services.html#ai-cybersecurity"
+                                    >AI Powered Cybersecurity</a
+                                >
+                            </li>
+                            <li><a href="services.html#soc-automation">SOC Automation</a></li>
+                            <li><a href="services.html#siem-automation">SIEM Automation</a></li>
+                            <li><a href="services.html#threat-detection">Threat Detection</a></li>
+                            <li>
+                                <a href="services.html#security-analytics">Security Analytics</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Company</h2>
+                        <ul>
+                            <li><a href="index.html#about">About OryvantAI</a></li>
+                            <li><a href="index.html#approach">Our Approach</a></li>
+                            <li><a href="#industries">Industries</a></li>
+                            <li><a href="insights.html">Insights</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h2>Contact</h2>
+                        <a href="mailto:bilal@oryvantai.tech">bilal@oryvantai.tech</a>
+                        <p>
+                            Muhammad Bilal<br />
+                            <span>Founder &amp; CEO</span>
+                        </p>
+                        <span class="footer-control"
+                            ><i
+                                class="fa-solid fa-user-shield"
+                                aria-hidden="true"
+                            ></i>
+                            People retain responsibility.</span
+                        >
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2026 OryvantAI. All rights reserved.</p>
+                    <div>
+                        <button
+                            type="button"
+                            data-dialog="privacy-dialog"
+                        >
+                            Privacy</button
+                        ><button
+                            type="button"
+                            data-dialog="cookie-dialog"
+                        >
+                            Cookie Preferences</button
+                        ><a
+                            href="#home"
+                            aria-label="Back to top"
+                            ><i
+                                class="fa-solid fa-arrow-up"
+                                aria-hidden="true"
+                            ></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <aside
+            class="cookie-banner"
+            aria-label="Cookie choices"
+            id="cookie-banner"
+            hidden
+        >
+            <div>
+                <p class="cookie-title">Your privacy. Your choice.</p>
+                <p>
+                    This page stores your preferences locally. Optional analytics and marketing are
+                    off unless you choose otherwise.
+                </p>
+            </div>
+            <div class="cookie-actions">
+                <button
+                    class="button button-primary"
+                    id="accept-cookies"
+                >
+                    Accept All</button
+                ><button
+                    class="button button-outline"
+                    id="reject-cookies"
+                >
+                    Reject Non Essential</button
+                ><button
+                    class="cookie-manage"
+                    data-dialog="cookie-dialog"
+                >
+                    Manage Preferences
+                </button>
+            </div>
+        </aside>
+        <dialog
+            id="cookie-dialog"
+            class="preference-dialog"
+            aria-labelledby="cookie-title"
+        >
+            <div class="dialog-header">
+                <h2 id="cookie-title">Cookie Preferences</h2>
+                <button
+                    class="close-dialog"
+                    aria-label="Close cookie preferences"
+                >
+                    ×
+                </button>
+            </div>
+            <p>
+                Choose how optional technologies may be used. This homepage currently includes no
+                analytics or marketing scripts.
+            </p>
+            <form id="cookie-form">
+                <div class="preference-row">
+                    <div>
+                        <h3>Necessary</h3>
+                        <p>Local preference storage helps this page remember your choices.</p>
+                    </div>
+                    <span class="always-on">Always on</span>
+                </div>
+                <label class="preference-row"
+                    ><span
+                        ><strong>Analytics</strong
+                        ><span>Optional measurement, if configured in a future update.</span></span
+                    ><input
+                        type="checkbox"
+                        name="analytics" /></label
+                ><label class="preference-row"
+                    ><span
+                        ><strong>Marketing</strong
+                        ><span
+                            >Optional campaign measurement, if configured in a future update.</span
+                        ></span
+                    ><input
+                        type="checkbox"
+                        name="marketing"
+                /></label>
+                <p
+                    class="storage-message"
+                    role="status"
+                    hidden
+                >
+                    Your browser could not save preferences. Your choice will apply for this visit.
+                </p>
+                <button
+                    class="button button-primary"
+                    type="submit"
+                >
+                    Save Preferences
+                </button>
+            </form>
+        </dialog>
+        <dialog
+            id="privacy-dialog"
+            class="preference-dialog"
+            aria-labelledby="privacy-title"
+        >
+            <div class="dialog-header">
+                <h2 id="privacy-title">Website Privacy</h2>
+                <button
+                    class="close-dialog"
+                    aria-label="Close privacy information"
+                >
+                    ×
+                </button>
+            </div>
+            <p>
+                This page does not send or store contact form entries and does not collect form
+                submissions or load analytics, marketing trackers or third party fonts. Your cookie
+                preferences are stored in this browser for up to 180 days.
+            </p>
+            <h3>Contacting OryvantAI</h3>
+            <p>
+                Email links open your email application. Information you choose to send is handled
+                through that service. Please do not include sensitive security evidence in an
+                initial message.
+            </p>
+            <h3>Hosting and server records</h3>
+            <p>
+                The eventual hosting service may process connection information and access logs. Its
+                configuration, retention and applicable privacy terms must be confirmed by the site
+                owner before launch.
+            </p>
+            <h3>Questions and preferences</h3>
+            <p>
+                Contact <a href="mailto:bilal@oryvantai.tech">bilal@oryvantai.tech</a>. You can
+                reopen Cookie Preferences from the footer at any time.
+            </p>
+            <button class="button button-primary close-dialog">Close</button>
+        </dialog>
+        <noscript
+            ><div class="noscript-note">
+                JavaScript is off. All page content and FAQs remain available. Contact OryvantAI at
+                bilal@oryvantai.tech. No optional tracking is loaded.
+            </div></noscript
+        >
+    </body>
+</html>

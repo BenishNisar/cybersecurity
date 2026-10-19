@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html
+    lang="en"
+    class="no-js"
+>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <meta
+            name="referrer"
+            content="strict-origin-when-cross-origin"
+        />
+        <meta
+            name="theme-color"
+            content="#07152F"
+        />
+        <title>Insights | OryvantAI</title>
+        <meta
+            name="description"
+            content="Practical perspectives on AI assisted SOC investigations, SIEM workflows, security procedures and accountable decisions from OryvantAI."
+        />
+        <link
+            rel="canonical"
+            href="https://oryvantai.tech/insights.html"
+        />
+        <meta
+            property="og:type"
+            content="website"
+        />
+        <meta
+            property="og:title"
+            content="Insights | OryvantAI"
+        />
+        <meta
+            property="og:description"
+            content="Your tools. Your experience. A clearer path from evidence to action."
+        />
+        <meta
+            property="og:url"
+            content="https://oryvantai.tech/insights.html"
+        />
+        <meta
+            property="og:image"
+            content="https://oryvantai.tech/assets/images/social-cover.webp"
+        />
+        <meta
+            property="og:image:alt"
+            content="OryvantAI brand artwork with cyan network connections"
+        />
+        <meta
+            name="twitter:card"
+            content="summary_large_image"
+        />
+        <meta
+            name="twitter:title"
+            content="Insights | OryvantAI"
+        />
+        <meta
+            name="twitter:description"
+            content="A clearer path from evidence to action."
+        />
+        <meta
+            name="twitter:image"
+            content="https://oryvantai.tech/assets/images/social-cover.webp"
+        />
+        <link
+            rel="icon"
+            href="assets/images/favicon.png"
+        />
+        <link
+            rel="preload"
+            as="image"
+            href="assets/images/hero-network.webp"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/vendor/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="assets/css/main.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="insights.css"
+        />
+        <script
+            defer
+            src="assets/js/main.min.js"
+        ></script>
+<style>
+    /* Insights page only. Navigation, fonts, buttons, consent and footer use global styles. */
+.insights-page .primary-nav .nav-home {
+    color: var(--brand-text);
+}
+.insights-page .primary-nav a[aria-current="page"] {
+    color: #1130a2;
+}
+.insights-hero {
+    padding: 150px 0 66px;
+    background:
+        linear-gradient(100deg, #07152f 35%, #07152fe8),
+        url("assets/images/hero-network.webp") right center / 50% auto no-repeat;
+}
+.insights-breadcrumb {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    color: #54e0fc;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.insights-breadcrumb a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    color: #c7d8e9;
+}
+.insights-hero h1 {
+    font-size: clamp(56px, 4.4vw, 68px);
+    line-height: 1.12;
+    letter-spacing: -0.05em;
+    margin-bottom: 26px;
+}
+.insights-lead {
+    max-width: 740px;
+    font-size: 18px;
+    line-height: 1.85;
+    color: #b4cce0;
+    margin: 0;
+}
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    align-items: start;
+}
+.insights-card {
+    min-width: 0;
+    background: white;
+    border: 1px solid var(--brand-border);
+    border-radius: var(--radius-card);
+    overflow: hidden;
+}
+.insights-card-image {
+    overflow: hidden;
+    background: #07152f;
+}
+.insights-card-image img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.65;
+    height: auto;
+    object-fit: cover;
+}
+.insights-card-copy {
+    padding: 30px;
+    min-width: 0;
+}
+.insights-card-copy > .mono-label {
+    color: #1130a2;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    margin-bottom: 18px;
+}
+.insights-card h3 {
+    font-size: 25px;
+    line-height: 1.4;
+    margin: 0 0 20px;
+}
+.insights-card-copy > p:not(.mono-label) {
+    font-size: 16px;
+    line-height: 1.85;
+    margin-bottom: 25px;
+}
+.insights-reader {
+    border-top: 1px solid var(--brand-border);
+    padding-top: 10px;
+}
+.insights-reader > summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 52px;
+    padding: 12px 0;
+    color: #1130a2;
+    font-size: 14px;
+    font-weight: 700;
+    list-style: none;
+    cursor: pointer;
+}
+.insights-reader > summary::-webkit-details-marker {
+    display: none;
+}
+.insights-reader > summary:focus-visible {
+    outline: 2px solid #0d89f1;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+.insights-reader > summary:hover {
+    color: #0d89f1;
+}
+.insights-reader[open] > summary {
+    border-bottom: 1px solid var(--brand-border);
+    margin-bottom: 24px;
+}
+.insights-reader[open] > summary i {
+    transform: rotate(90deg);
+}
+.insights-article .insights-byline {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: #1130a2;
+    margin-bottom: 24px;
+}
+.insights-article-section + .insights-article-section {
+    margin-top: 26px;
+}
+.insights-article-section h4 {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+.insights-article-section p {
+    font-size: 16px;
+    line-height: 1.95;
+    margin: 0;
+}
+.insights-featured {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+}
+.insights-featured .insights-card-image {
+    height: 100%;
+    min-height: 390px;
+}
+.insights-featured .insights-card-image img {
+    height: 100%;
+    min-height: 390px;
+    object-fit: cover;
+}
+.insights-featured .insights-card-copy {
+    padding: 44px;
+}
+.insights-featured h3 {
+    font-size: 36px;
+    line-height: 1.3;
+}
+.insights-cta {
+    padding: 72px 0;
+}
+.insights-cta .contact-panel {
+    padding: 52px;
+}
+.insights-cta .contact-panel > div:first-child {
+    min-width: 0;
+}
+@media (max-width: 1279px) {
+    .insights-card-copy {
+        padding: 26px;
+    }
+    .insights-featured .insights-card-copy {
+        padding: 35px;
+    }
+    .insights-featured h3 {
+        font-size: 32px;
+    }
+}
+@media (max-width: 1023px) {
+    .insights-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .insights-featured {
+        grid-template-columns: 0.85fr 1.15fr;
+    }
+    .insights-featured .insights-card-copy {
+        padding: 30px;
+    }
+    .insights-featured h3 {
+        font-size: 29px;
+    }
+    .insights-cta .contact-panel {
+        padding: 42px;
+    }
+}
+@media (max-width: 767px) {
+    .insights-hero {
+        padding: 120px 0 50px;
+        background-size: 100% auto;
+    }
+    .insights-breadcrumb {
+        margin-bottom: 24px;
+    }
+    .insights-hero h1 {
+        font-size: 41px;
+        line-height: 1.15;
+    }
+    .insights-lead {
+        font-size: 17px;
+    }
+    .insights-grid,
+    .insights-featured {
+        grid-template-columns: 1fr;
+    }
+    .insights-featured .insights-card-image,
+    .insights-featured .insights-card-image img {
+        min-height: 0;
+        height: auto;
+    }
+    .insights-featured .insights-card-image img {
+        aspect-ratio: 1.65;
+    }
+    .insights-card-copy,
+    .insights-featured .insights-card-copy {
+        padding: 28px;
+    }
+    .insights-card h3 {
+        font-size: 25px;
+    }
+    .insights-featured h3 {
+        font-size: 29px;
+    }
+    .insights-cta {
+        padding: 64px 0;
+    }
+    .insights-cta .contact-panel {
+        padding: 35px 26px;
+    }
+    .insights-cta .contact-panel h2 {
+        font-size: 36px;
+    }
+}
+@media (max-width: 389px) {
+    .insights-hero h1 {
+        font-size: 38px;
+    }
+    .insights-card-copy,
+    .insights-featured .insights-card-copy {
+        padding: 25px;
+    }
+}
+
+</style>
+
+
+    </head>
+    <body class="insights-page">
+        <a
+            class="skip-link"
+            href="#main"
+            >Skip to content</a
+        >
+        <div class="topbar">
+            <div class="page-container flex items-center justify-between">
+                <p>
+                    <i
+                        class="fa-solid fa-shield-halved"
+                        aria-hidden="true"
+                    ></i>
+                    INTELLIGENCE FOR ACCOUNTABLE SECURITY OPERATIONS
+                </p>
+                <a href="mailto:bilal@oryvantai.tech"
+                    >bilal@oryvantai.tech
+                    <i
+                        class="fa-solid fa-arrow-up-right-from-square"
+                        aria-hidden="true"
+                    ></i
+                ></a>
+            </div>
+        </div>
+        <!-- Header -->
+        <header class="site-header">
+            <div class="header-inner">
+                <a
+                    class="brand"
+                    href="index.html"
+                    aria-label="OryvantAI home"
+                    ><img
+                        src="assets/images/logo-240.webp"
+                        width="42"
+                        height="42"
+                        alt=""
+                    /><span>Oryvant<span class="brand-ai">AI</span></span></a
+                ><button
+                    class="mobile-toggle"
+                    aria-controls="primary-nav"
+                    aria-expanded="false"
+                >
+                    <span
+                        class="menu-lines"
+                        aria-hidden="true"
+                    ></span
+                    ><span class="sr-only">Open navigation</span>
+                </button>
+                <nav
+                    class="primary-nav"
+                    id="primary-nav"
+                    aria-label="Main navigation"
+                >
+                    <div class="mobile-nav-heading">
+                        <span>Explore OryvantAI</span><span>SECURITY + INTELLIGENCE</span>
+                    </div>
+                    <a
+                        href="index.html"
+                        class="nav-home"
+                        >Home</a
+                    >
+                    <div class="nav-group">
+                        <button
+                            class="nav-dropdown-toggle"
+                            aria-expanded="false"
+                            aria-controls="menu-solutions"
+                        >
+                            Solutions<i
+                                class="fa-solid fa-chevron-down"
+                                aria-hidden="true"
+                            ></i>
+                        </button>
+                        <div
+                            class="nav-dropdown menu-solutions"
+                            id="menu-solutions"
+                            hidden
+                        >
+                            <div class="menu-heading">
+                                <span>SOLUTIONS</span><span>BUILT AROUND YOUR OPERATIONS</span>
+                            </div>
+                            <div class="menu-grid">
+                                <a href="solutions.html#intelligence"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-fingerprint"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Security Intelligence Workbench</strong
+                                        ><small>Evidence and investigation</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="solutions.html#response"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-shield-halved"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Procedure &amp; Response Studio</strong
+                                        ><small>Procedures and reviewed response</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="solutions.html#learning"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-chart-line"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Learning &amp; Reporting Workspace</strong
+                                        ><small>Learning and decision support</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                            <div class="menu-bottom">
+                                Controlled AI. Clear accountability.<a href="contact.html"
+                                    >Talk to an Expert
+                                    <i
+                                        class="fa-solid fa-arrow-right"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-group">
+                        <button
+                            class="nav-dropdown-toggle"
+                            aria-expanded="false"
+                            aria-controls="menu-services"
+                        >
+                            Services<i
+                                class="fa-solid fa-chevron-down"
+                                aria-hidden="true"
+                            ></i>
+                        </button>
+                        <div
+                            class="nav-dropdown menu-services"
+                            id="menu-services"
+                            hidden
+                        >
+                            <div class="menu-heading">
+                                <span>SERVICES</span><span>BUILT AROUND YOUR OPERATIONS</span>
+                            </div>
+                            <div class="menu-grid">
+                                <a href="services.html#ai-cybersecurity"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-brain"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>AI Powered Cybersecurity</strong
+                                        ><small>Controlled intelligence</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="services.html#soc-automation"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-diagram-project"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>SOC Automation</strong
+                                        ><small>Analyst workflow assistance</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="services.html#siem-automation"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-database"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>SIEM Automation</strong
+                                        ><small>Logs and validated queries</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="services.html#threat-detection"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-crosshairs"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Threat Detection</strong
+                                        ><small>Context and detection quality</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="services.html#security-analytics"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-chart-line"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Security Analytics</strong
+                                        ><small>Trusted records into reporting</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                            <div class="menu-bottom">
+                                Controlled AI. Clear accountability.<a href="contact.html"
+                                    >Talk to an Expert
+                                    <i
+                                        class="fa-solid fa-arrow-right"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-group">
+                        <button
+                            class="nav-dropdown-toggle"
+                            aria-expanded="false"
+                            aria-controls="menu-industries"
+                        >
+                            Industries<i
+                                class="fa-solid fa-chevron-down"
+                                aria-hidden="true"
+                            ></i>
+                        </button>
+                        <div
+                            class="nav-dropdown menu-industries"
+                            id="menu-industries"
+                            hidden
+                        >
+                            <div class="menu-heading">
+                                <span>INDUSTRIES</span><span>BUILT AROUND YOUR OPERATIONS</span>
+                            </div>
+                            <div class="menu-grid">
+                                <a href="index.html#industry-0"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-building-columns"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Financial Services</strong
+                                        ><small>Investigation and evidence</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="index.html#industry-1"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-heart-pulse"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Healthcare</strong
+                                        ><small>Sensitive access and incidents</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="index.html#industry-2"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-tower-broadcast"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Telecom</strong
+                                        ><small>Visibility and handovers</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="index.html#industry-3"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-industry"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Operational Technology</strong
+                                        ><small>Operational safety and control</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="index.html#industry-4"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-building-shield"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Regulated Enterprises</strong
+                                        ><small>Defined requirements and scope</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a href="index.html#industry-5"
+                                    ><span class="menu-icon"
+                                        ><i
+                                            class="fa-solid fa-network-wired"
+                                            aria-hidden="true"
+                                        ></i></span
+                                    ><span
+                                        ><strong>Managed Security Providers</strong
+                                        ><small>Existing team enablement</small></span
+                                    ><i
+                                        class="fa-solid fa-arrow-right menu-arrow"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                            <div class="menu-bottom">
+                                Controlled AI. Clear accountability.<a href="contact.html"
+                                    >Talk to an Expert
+                                    <i
+                                        class="fa-solid fa-arrow-right"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="index.html#about">Company</a
+                    ><a
+                        href="#insights"
+                        aria-current="page"
+                        >Insights</a
+                    ><a href="contact.html">Contact</a
+                    ><a
+                        class="button button-primary mobile-cta"
+                        href="contact.html"
+                        >Talk to an Expert
+                        <i
+                            class="fa-solid fa-arrow-up-right-from-square"
+                            aria-hidden="true"
+                        ></i
+                    ></a>
+                    <p class="mobile-nav-note">
+                        Your tools. Your experience.<br />A clearer path from evidence to action.
+                    </p>
+                </nav>
+                <a
+                    class="button button-primary desktop-cta"
+                    href="contact.html"
+                    >Talk to an Expert
+                    <i
+                        class="fa-solid fa-arrow-up-right-from-square"
+                        aria-hidden="true"
+                    ></i
+                ></a>
+            </div>
+        </header>
+        <div
+            class="nav-backdrop"
+            hidden
+        ></div>
+
+        <!-- Services Hero -->
+        <!-- Contact Hero -->
+        <!-- Insights Hero -->
+        <main id="main">
+            <section
+                class="insights-hero dark-section"
+                id="home"
+                aria-labelledby="insights-title"
+            >
+                <div class="page-container">
+                    <nav
+                        class="insights-breadcrumb"
+                        aria-label="Breadcrumb"
+                    >
+                        <a href="index.html">Home</a><span aria-hidden="true">/</span
+                        ><span aria-current="page">Insights</span>
+                    </nav>
+                    <p class="eyebrow"><span aria-hidden="true"></span>ORYVANTAI INSIGHTS</p>
+                    <h1 id="insights-title">
+                        Practical thinking.<br /><span class="logo-gradient-text"
+                            >Better security workflows.</span
+                        >
+                    </h1>
+                    <p class="insights-lead">
+                        Perspectives on security operations, evidence and controlled AI. Built
+                        around the people responsible for decisions.
+                    </p>
+                </div>
+            </section>
+            <!-- Featured Insight -->
+            <section
+                class="section"
+                aria-labelledby="featured-title"
+            >
+                <div class="page-container">
+                    <div class="section-heading">
+                        <p class="eyebrow"><span aria-hidden="true"></span>IN FOCUS</p>
+                        <h2 id="featured-title">Evidence comes first.</h2>
+                    </div>
+                    <article
+                        class="insights-card insights-featured"
+                        id="soc-investigations"
+                    >
+                        <div class="insights-card-image">
+                            <img
+                                src="assets/images/operations-640.webp"
+                                srcset=","
+                                    assets/images/operations-640.webp   640w
+                                    assets/images/operations-1280.webp 1280w
+                                
+                                sizes="(max-width: 767px) 100vw, 50vw"
+                                width="1280"
+                                height="720"
+                                alt=""
+                                fetchpriority="high"
+                                decoding="async"
+                            />
+                        </div>
+                        <div class="insights-card-copy">
+                            <p class="mono-label">SOC OPERATIONS</p>
+                            <h3>AI Assisted SOC Investigations</h3>
+                            <p>
+                                What makes a case brief useful, traceable and ready for analyst
+                                review?
+                            </p>
+                            <details class="insights-reader">
+                                <summary>
+                                    <span>Read insight</span
+                                    ><i
+                                        class="fa-solid fa-arrow-up-right-from-square"
+                                        aria-hidden="true"
+                                    ></i>
+                                </summary>
+                                <div class="insights-article">
+                                    <p class="insights-byline">ORYVANTAI PERSPECTIVES</p>
+                                    <section class="insights-article-section">
+                                        <h4>Start with the evidence</h4>
+                                        <p>
+                                            An investigation brief should make the evidence easier
+                                            to inspect. Permitted events, asset context and relevant
+                                            case history give the analyst a starting point. Source
+                                            references allow observations to be checked against the
+                                            original records.
+                                        </p>
+                                    </section>
+                                    <section class="insights-article-section">
+                                        <h4>Separate facts from open questions</h4>
+                                        <p>
+                                            A useful brief distinguishes observed facts,
+                                            interpretation and missing context. AI can help align a
+                                            timeline and prepare next checks, but an unexplained
+                                            verdict is not a substitute for a reviewable account.
+                                        </p>
+                                    </section>
+                                    <section class="insights-article-section">
+                                        <h4>Keep the decision with the analyst</h4>
+                                        <p>
+                                            The reviewer verifies the context and decides what
+                                            happens next. A named reviewer and the relevant approved
+                                            procedure make responsibility explicit. There should be
+                                            no silent case closure or unapproved production
+                                            response.
+                                        </p>
+                                    </section>
+                                </div>
+                            </details>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- Blog Listing -->
+            <section
+                class="section light-section"
+                id="insights"
+                aria-labelledby="latest-title"
+            >
+                <div class="page-container">
+                    <div class="section-heading">
+                        <p class="eyebrow"><span aria-hidden="true"></span>EXPLORE THE INSIGHTS</p>
+                        <h2 id="latest-title">From investigation<br />to improvement.</h2>
+                        <p>
+                            Explore the operational questions behind clearer, more reviewable
+                            security work.
+                        </p>
+                    </div>
+                    <div class="insights-grid">
+                        <article
+                            class="insights-card"
+                            id="siem-automation"
+                        >
+                            <div class="insights-card-image">
+                                <img
+                                    src="assets/images/network-640.webp"
+                                    srcset=","
+                                        assets/images/network-640.webp   640w
+                                        assets/images/network-1280.webp 1280w
+                                    
+                                    sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                                    width="1280"
+                                    height="720"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                            </div>
+                            <div class="insights-card-copy">
+                                <p class="mono-label">SIEM & LOGS</p>
+                                <h3>Designing Safer SIEM Automation</h3>
+                                <p>
+                                    Why bounded queries, validation and permissions belong in the
+                                    workflow.
+                                </p>
+                                <details class="insights-reader">
+                                    <summary>
+                                        <span>Read insight</span
+                                        ><i
+                                            class="fa-solid fa-arrow-up-right-from-square"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </summary>
+                                    <div class="insights-article">
+                                        <p class="insights-byline">ORYVANTAI PERSPECTIVES</p>
+                                        <section class="insights-article-section">
+                                            <h4>Define the question first</h4>
+                                            <p>
+                                                A bounded query starts with a clear analyst question
+                                                and agreed sources. The scope should identify what
+                                                evidence is needed, who may access it and which
+                                                system will execute the query.
+                                            </p>
+                                        </section>
+                                        <section class="insights-article-section">
+                                            <h4>Validate before execution</h4>
+                                            <p>
+                                                Query syntax and access must be validated before
+                                                execution. Original logs and trusted counts remain
+                                                available for review. Explanations should make
+                                                collection and parsing gaps visible rather than hide
+                                                them.
+                                            </p>
+                                        </section>
+                                        <section class="insights-article-section">
+                                            <h4>Review tuning as a change</h4>
+                                            <p>
+                                                Reviewed cases can inform a prioritised tuning
+                                                backlog. Proposed changes need coverage testing and
+                                                approval before they are accepted. Platform
+                                                capabilities and integration permissions must be
+                                                confirmed within the customer scope.
+                                            </p>
+                                        </section>
+                                    </div>
+                                </details>
+                            </div>
+                        </article>
+                        <article
+                            class="insights-card"
+                            id="incident-lessons"
+                        >
+                            <div class="insights-card-image">
+                                <img
+                                    src="assets/images/cybersecurity-640.webp"
+                                    srcset=","
+                                        assets/images/cybersecurity-640.webp   640w
+                                        assets/images/cybersecurity-1280.webp 1280w
+                                    
+                                    sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                                    width="1280"
+                                    height="720"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                            </div>
+                            <div class="insights-card-copy">
+                                <p class="mono-label">PROCEDURES</p>
+                                <h3>Turning Incident Lessons into Better Security Procedures</h3>
+                                <p>Connect accepted case experience to company specific SOPs.</p>
+                                <details class="insights-reader">
+                                    <summary>
+                                        <span>Read insight</span
+                                        ><i
+                                            class="fa-solid fa-arrow-up-right-from-square"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </summary>
+                                    <div class="insights-article">
+                                        <p class="insights-byline">ORYVANTAI PERSPECTIVES</p>
+                                        <section class="insights-article-section">
+                                            <h4>Begin with a reviewed case</h4>
+                                            <p>
+                                                An incident can reveal a delayed handover, an
+                                                unclear owner or missing evidence. Once the findings
+                                                are reviewed, those lessons can support a specific
+                                                procedure proposal.
+                                            </p>
+                                        </section>
+                                        <section class="insights-article-section">
+                                            <h4>Make the proposal inspectable</h4>
+                                            <p>
+                                                Explain what changes, why it changes and who is
+                                                responsible. Use approved policies, roles and
+                                                documentation as the knowledge foundation. Keep
+                                                assumptions and open questions visible to the
+                                                procedure owner.
+                                            </p>
+                                        </section>
+                                        <section class="insights-article-section">
+                                            <h4>Publish with ownership</h4>
+                                            <p>
+                                                The procedure owner decides what is approved and
+                                                published. Testing, version history and an agreed
+                                                route back to the previous version make accepted
+                                                changes easier to manage. AI prepares the proposal;
+                                                it does not assume publication authority.
+                                            </p>
+                                        </section>
+                                    </div>
+                                </details>
+                            </div>
+                        </article>
+                        <article
+                            class="insights-card"
+                            id="behaviour-context"
+                        >
+                            <div class="insights-card-image">
+                                <img
+                                    src="assets/images/network-640.webp"
+                                    srcset=","
+                                        assets/images/network-640.webp   640w
+                                        assets/images/network-1280.webp 1280w
+                                    
+                                    sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                                    width="1280"
+                                    height="720"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                            </div>
+                            <div class="insights-card-copy">
+                                <p class="mono-label">THREAT DETECTION</p>
+                                <h3>An Anomaly Is a Starting Point, Not a Verdict</h3>
+                                <p>
+                                    Add behaviour and operating context before escalating a signal.
+                                </p>
+                                <details class="insights-reader">
+                                    <summary>
+                                        <span>Read insight</span
+                                        ><i
+                                            class="fa-solid fa-arrow-up-right-from-square"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </summary>
+                                    <div class="insights-article">
+                                        <p class="insights-byline">ORYVANTAI PERSPECTIVES</p>
+                                        <section class="insights-article-section">
+                                            <h4>Ask what changed</h4>
+                                            <p>
+                                                A deviation needs context. Relevant assets, expected
+                                                activity and reviewed case history help analysts
+                                                decide which differences deserve further checks
+                                                within an agreed scenario.
+                                            </p>
+                                        </section>
+                                        <section class="insights-article-section">
+                                            <h4>Test the interpretation</h4>
+                                            <p>
+                                                An anomaly is not proof of an attack. Detection
+                                                logic and coverage need review, and explainable
+                                                operational changes should remain part of the
+                                                investigation. Context supports a decision rather
+                                                than replacing it.
+                                            </p>
+                                        </section>
+                                    </div>
+                                </details>
+                            </div>
+                        </article>
+                        <article
+                            class="insights-card"
+                            id="trusted-reporting"
+                        >
+                            <div class="insights-card-image">
+                                <img
+                                    src="assets/images/operations-640.webp"
+                                    srcset=","
+                                        assets/images/operations-640.webp   640w
+                                        assets/images/operations-1280.webp 1280w
+                                    
+                                    sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                                    width="1280"
+                                    height="720"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                            </div>
+                            <div class="insights-card-copy">
+                                <p class="mono-label">SECURITY ANALYTICS</p>
+                                <h3>Reporting That Keeps the Evidence in View</h3>
+                                <p>
+                                    Connect technical findings to operational and management
+                                    decisions.
+                                </p>
+                                <details class="insights-reader">
+                                    <summary>
+                                        <span>Read insight</span
+                                        ><i
+                                            class="fa-solid fa-arrow-up-right-from-square"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </summary>
+                                    <div class="insights-article">
+                                        <p class="insights-byline">ORYVANTAI PERSPECTIVES</p>
+                                        <section class="insights-article-section">
+                                            <h4>Use validated inputs</h4>
+                                            <p>
+                                                Operational reporting should start with validated
+                                                case data and trusted calculations. Source context
+                                                helps the reader understand what a finding means and
+                                                where the evidence is incomplete.
+                                            </p>
+                                        </section>
+                                        <section class="insights-article-section">
+                                            <h4>Match the output to the decision</h4>
+                                            <p>
+                                                Security teams may need recurring issues and tuning
+                                                priorities. Leaders may need risk context and the
+                                                status of accepted improvements. Both views should
+                                                connect findings to decisions and distinguish
+                                                accepted changes from unresolved proposals.
+                                            </p>
+                                        </section>
+                                    </div>
+                                </details>
+                            </div>
+                        </article>
+                        <article
+                            class="insights-card"
+                            id="first-workflow"
+                        >
+                            <div class="insights-card-image">
+                                <img
+                                    src="assets/images/cybersecurity-640.webp"
+                                    srcset=","
+                                        assets/images/cybersecurity-640.webp   640w
+                                        assets/images/cybersecurity-1280.webp 1280w
+                                    
+                                    sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                                    width="1280"
+                                    height="720"
+                                    alt=""
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                            </div>
+                            <div class="insights-card-copy">
+                                <p class="mono-label">CONTROLLED AI</p>
+                                <h3>Start with One Security Workflow</h3>
+                                <p>
+                                    Define the evidence, owner and operating boundary before adding
+                                    assistance.
+                                </p>
+                                <details class="insights-reader">
+                                    <summary>
+                                        <span>Read insight</span
+                                        ><i
+                                            class="fa-solid fa-arrow-up-right-from-square"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </summary>
+                                    <div class="insights-article">
+                                        <p class="insights-byline">ORYVANTAI PERSPECTIVES</p>
+                                        <section class="insights-article-section">
+                                            <h4>Choose a recurring task</h4>
+                                            <p>
+                                                A focused investigation, procedure or reporting task
+                                                can be a useful starting point. Confirm the
+                                                evidence, the decision owner, the permitted systems
+                                                and the expected output before defining the
+                                                assistance.
+                                            </p>
+                                        </section>
+                                        <section class="insights-article-section">
+                                            <h4>Build on a usable foundation</h4>
+                                            <p>
+                                                When telemetry, ownership or procedures are
+                                                incomplete, begin with readiness and engineering. AI
+                                                assistance should follow a usable evidence
+                                                foundation. Connect additional workflows only where
+                                                that improves a real operational task.
+                                            </p>
+                                        </section>
+                                    </div>
+                                </details>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- Final CTA -->
+            <section class="insights-cta">
+                <div class="page-container">
+                    <div class="contact-panel">
+                        <div>
+                            <p class="eyebrow">
+                                <span aria-hidden="true"></span>PUT THE THINKING TO WORK
+                            </p>
+                            <h2>Start with one security<br />workflow that matters.</h2>
+                            <p>Define the evidence, decision owner and operating boundary first.</p>
+                            <div class="button-row">
+                                <a
+                                    class="button button-primary"
+                                    href="contact.html"
+                                    >Talk to an Expert<i
+                                        class="fa-solid fa-arrow-up-right-from-square"
+                                        aria-hidden="true"
+                                    ></i></a
+                                ><a
+                                    class="button button-secondary"
+                                    href="services.html"
+                                    >Explore Services<i
+                                        class="fa-solid fa-arrow-up-right-from-square"
+                                        aria-hidden="true"
+                                    ></i
+                                ></a>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-shield">
+                                <i
+                                    class="fa-solid fa-shield-halved"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+                            <p>A direct conversation</p>
+                            <a href="mailto:bilal@oryvantai.tech">bilal@oryvantai.tech</a
+                            ><span>oryvantai.tech</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="page-container">
+                <div class="footer-intro">
+                    <a
+                        class="brand"
+                        href="index.html"
+                        aria-label="OryvantAI home"
+                        ><img
+                            src="assets/images/logo-240.webp"
+                            width="42"
+                            height="42"
+                            alt=""
+                        /><span>Oryvant<span class="brand-ai">AI</span></span></a
+                    >
+                    <p>Custom AI powered cybersecurity.<br />Built around your operations.</p>
+                    <a href="contact.html"
+                        >Start a conversation
+                        <i
+                            class="fa-solid fa-arrow-up-right-from-square"
+                            aria-hidden="true"
+                        ></i
+                    ></a>
+                </div>
+                <div class="footer-grid">
+                    <div class="footer-description">
+                        <h2>Intelligence. With accountability.</h2>
+                        <p>
+                            Connect evidence, improve workflows and support the people responsible
+                            for security decisions.
+                        </p>
+                        <a href="https://oryvantai.tech/"
+                            >oryvantai.tech
+                            <i
+                                class="fa-solid fa-arrow-up-right-from-square"
+                                aria-hidden="true"
+                            ></i
+                        ></a>
+                    </div>
+                    <div>
+                        <h2>Solutions</h2>
+                        <ul>
+                            <li>
+                                <a href="solutions.html#intelligence"
+                                    >Security Intelligence Workbench</a
+                                >
+                            </li>
+                            <li>
+                                <a href="solutions.html#response"
+                                    >Procedure &amp; Response Studio</a
+                                >
+                            </li>
+                            <li>
+                                <a href="solutions.html#learning"
+                                    >Learning &amp; Reporting Workspace</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Services</h2>
+                        <ul>
+                            <li>
+                                <a href="services.html#ai-cybersecurity"
+                                    >AI Powered Cybersecurity</a
+                                >
+                            </li>
+                            <li><a href="services.html#soc-automation">SOC Automation</a></li>
+                            <li><a href="services.html#siem-automation">SIEM Automation</a></li>
+                            <li><a href="services.html#threat-detection">Threat Detection</a></li>
+                            <li>
+                                <a href="services.html#security-analytics">Security Analytics</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Company</h2>
+                        <ul>
+                            <li><a href="index.html#about">About OryvantAI</a></li>
+                            <li><a href="index.html#approach">Our Approach</a></li>
+                            <li><a href="index.html#industries">Industries</a></li>
+                            <li><a href="#insights">Insights</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h2>Contact</h2>
+                        <a href="mailto:bilal@oryvantai.tech">bilal@oryvantai.tech</a>
+                        <p>Muhammad Bilal<br /><span>Founder &amp; CEO</span></p>
+                        <span class="footer-control"
+                            ><i
+                                class="fa-solid fa-user-shield"
+                                aria-hidden="true"
+                            ></i>
+                            People retain responsibility.</span
+                        >
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2026 OryvantAI. All rights reserved.</p>
+                    <div>
+                        <button
+                            type="button"
+                            data-dialog="privacy-dialog"
+                        >
+                            Privacy</button
+                        ><button
+                            type="button"
+                            data-dialog="cookie-dialog"
+                        >
+                            Cookie Preferences</button
+                        ><a
+                            href="#home"
+                            aria-label="Back to top"
+                            ><i
+                                class="fa-solid fa-arrow-up"
+                                aria-hidden="true"
+                            ></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <aside
+            class="cookie-banner"
+            aria-label="Cookie choices"
+            id="cookie-banner"
+            hidden
+        >
+            <div>
+                <p class="cookie-title">Your privacy. Your choice.</p>
+                <p>
+                    This page stores your preferences locally. Optional analytics and marketing are
+                    off unless you choose otherwise.
+                </p>
+            </div>
+            <div class="cookie-actions">
+                <button
+                    class="button button-primary"
+                    id="accept-cookies"
+                >
+                    Accept All</button
+                ><button
+                    class="button button-outline"
+                    id="reject-cookies"
+                >
+                    Reject Non Essential</button
+                ><button
+                    class="cookie-manage"
+                    data-dialog="cookie-dialog"
+                >
+                    Manage Preferences
+                </button>
+            </div>
+        </aside>
+        <dialog
+            id="cookie-dialog"
+            class="preference-dialog"
+            aria-labelledby="cookie-title"
+        >
+            <div class="dialog-header">
+                <h2 id="cookie-title">Cookie Preferences</h2>
+                <button
+                    class="close-dialog"
+                    aria-label="Close cookie preferences"
+                >
+                    ×
+                </button>
+            </div>
+            <p>
+                Choose how optional technologies may be used. This homepage currently includes no
+                analytics or marketing scripts.
+            </p>
+            <form id="cookie-form">
+                <div class="preference-row">
+                    <div>
+                        <h3>Necessary</h3>
+                        <p>Local preference storage helps this page remember your choices.</p>
+                    </div>
+                    <span class="always-on">Always on</span>
+                </div>
+                <label class="preference-row"
+                    ><span
+                        ><strong>Analytics</strong
+                        ><span>Optional measurement, if configured in a future update.</span></span
+                    ><input
+                        type="checkbox"
+                        name="analytics" /></label
+                ><label class="preference-row"
+                    ><span
+                        ><strong>Marketing</strong
+                        ><span
+                            >Optional campaign measurement, if configured in a future update.</span
+                        ></span
+                    ><input
+                        type="checkbox"
+                        name="marketing"
+                /></label>
+                <p
+                    class="storage-message"
+                    role="status"
+                    hidden
+                >
+                    Your browser could not save preferences. Your choice will apply for this visit.
+                </p>
+                <button
+                    class="button button-primary"
+                    type="submit"
+                >
+                    Save Preferences
+                </button>
+            </form>
+        </dialog>
+        <dialog
+            id="privacy-dialog"
+            class="preference-dialog"
+            aria-labelledby="privacy-title"
+        >
+            <div class="dialog-header">
+                <h2 id="privacy-title">Website Privacy</h2>
+                <button
+                    class="close-dialog"
+                    aria-label="Close privacy information"
+                >
+                    ×
+                </button>
+            </div>
+            <p>
+                This page does not send or store contact form entries and does not collect form
+                submissions or load analytics, marketing trackers or third party fonts. Your cookie
+                preferences are stored in this browser for up to 180 days.
+            </p>
+            <h3>Contacting OryvantAI</h3>
+            <p>
+                Email links open your email application. Information you choose to send is handled
+                through that service. Please do not include sensitive security evidence in an
+                initial message.
+            </p>
+            <h3>Hosting and server records</h3>
+            <p>
+                The eventual hosting service may process connection information and access logs. Its
+                configuration, retention and applicable privacy terms must be confirmed by the site
+                owner before launch.
+            </p>
+            <h3>Questions and preferences</h3>
+            <p>
+                Contact <a href="mailto:bilal@oryvantai.tech">bilal@oryvantai.tech</a>. You can
+                reopen Cookie Preferences from the footer at any time.
+            </p>
+            <button class="button button-primary close-dialog">Close</button>
+        </dialog>
+        <noscript
+            ><div class="noscript-note">
+                JavaScript is off. All page content and FAQs remain available. Contact OryvantAI at
+                bilal@oryvantai.tech. No optional tracking is loaded.
+            </div></noscript
+        >
+    </body>
+</html>
